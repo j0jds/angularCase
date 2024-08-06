@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-
+  tipo = 'Teste';
+  preco = 100;
 }
