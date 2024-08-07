@@ -1,5 +1,32 @@
 <div class="card">
-    <div class = "card__plan card__item">Plano <b>{{ plano?.tipo }}</b></div>
-    <div class = "card__price card__item">R${{ plano?.preco }},00/Mês</div>
+    <div class="card__plan card__item">Plano <b>{{ plano?.tipo ? plano.tipo : 'Vazio' }}</b></div>
+
+    <!-- 
+    
+         A expressão entre as chaves duplas ({{ }}) é usada em frameworks como AngularJS, Vue.js ou outros para interpolação de dados. 
+         Isso significa que o conteúdo entre as chaves será avaliado e substituído pelo valor resultante. 
+    
+    -->
+        
+    <!-- 
+        plano?.tipo ? plano.tipo : 'Vazio
+        
+        Esta é uma expressão condicional (ou operador ternário).
+        Ela verifica se plano?.tipo tem um valor que não é null nem undefined.
+        Se plano?.tipo tiver um valor válido, a expressão retorna plano.tipo.
+        Se plano?.tipo for undefined (o que acontece se plano for null ou plano.tipo não existir), a expressão retorna a string 'Vazio'.
+    
+    -->
+
+    <!-- 
+
+        Resumo
+
+        Se plano estiver definido e plano.tipo tiver um valor, esse valor será exibido.
+        Se plano for null, undefined ou se plano.tipo não estiver definido, a palavra 'Vazio' será exibida.
+
+    -->
+
+    <div class="card__price card__item">R${{ plano?.preco }},00/Mês</div>
     <card-button></card-button>
 </div>

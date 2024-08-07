@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   // @ts-ignore
-  plano;
+  plano: any;
 }
