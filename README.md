@@ -1,4 +1,4 @@
-## Projeto de Estudos do Curso da Udemy "Curso de Angular v2 ao v17: Básico ao Profissional"
+# Projeto de Estudos do Curso da Udemy "Curso de Angular v2 ao v17: Básico ao Profissional"
 
 Este repositório contém os projetos e exercícios desenvolvidos durante o curso "Curso de Angular v2 ao v17: Básico ao Profissional" disponível na Udemy. O curso abrange desde os conceitos básicos até as técnicas avançadas do framework Angular, proporcionando uma formação completa para desenvolvedores.
 
