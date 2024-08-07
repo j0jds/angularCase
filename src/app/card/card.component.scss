@@ -22,7 +22,9 @@
 }
 
 ::ng-deep .cancel-button .card-cancel-button {
-
     background-color: yellow !important; 
-
 }
+
+mat-slider {
+    width: 300px;
+  }
