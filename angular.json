@@ -23,7 +23,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
-          "options": {
+          "options": { 
             "outputPath": "dist/angular-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -41,7 +41,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [], 
+            "stylePreprocessorOptions": {
+              "includePaths": [
+               "src/styles"
+              ]
+            }
           },
           "configurations": {
             "production": {
