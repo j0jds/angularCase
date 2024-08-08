@@ -34,9 +34,13 @@ export class AppComponent {
 
   }
 
-  handleInputKeyup(event: any) {
+  logInputText() {
+    console.log(this.inputText);
+  }
 
-    console.log(event);
+  handleInputKeyup(event: KeyboardEvent) {
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText);
 
   }
 
