@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  StyleObject = {
+    width: '50px',
+  };
 
+  updateStyleObject() {
+    console.log('updateStyleObject');
+    this.StyleObject = {
+      width: '10px',
+    } 
+   }
 }
+
+
