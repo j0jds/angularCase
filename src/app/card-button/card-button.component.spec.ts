@@ -6,12 +6,10 @@ describe('CardButtonComponent', () => {
   let component: CardButtonComponent;
   let fixture: ComponentFixture<CardButtonComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [CardButtonComponent]
-    })
-    .compileComponents();
-
+    });
     fixture = TestBed.createComponent(CardButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

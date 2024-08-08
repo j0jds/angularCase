@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'card-roxo',
+  selector: 'app-card-roxo',
   templateUrl: './card-roxo.component.html',
-  styleUrl: './card-roxo.component.scss'
+  styleUrls: ['./card-roxo.component.scss']
 })
 export class CardRoxoComponent {
 

@@ -1,24 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component'; 
-
+import { AppComponent } from './app.component';
 import { CardsModule } from './cards/cards.module';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
-// Para que um componente seja referenciado em outro, o nome dele deve estar inserido no array declarations de @NgModule.
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    CardsModule
+    CardsModule,
+    BrowserAnimationsModule
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
