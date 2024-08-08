@@ -6,5 +6,38 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'project';
+    inputText = "Texto Inicial Alterado";
+    inputType = "text";
+    isDisabled = true;
+
+  enableInput() {
+
+    this.isDisabled = false;
+
+  }
+
+  disableInput() {
+
+    this.isDisabled = true;
+
+  }
+
+  setPasswordTypeInput() {
+
+    this.inputType = 'password';
+
+  }
+
+  setTextTypeInput() {
+
+    this.inputType = 'text';
+
+  }
+
+  handleInputKeyup(event: any) {
+
+    console.log(event);
+
+  }
+
 }
