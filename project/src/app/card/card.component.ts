@@ -9,7 +9,7 @@ export class CardComponent {
   @Input() planType: string = '';
   @Input() planPrice: number = 0 ;
 
-   buttonClicked() {
-    console.log('buttonClicked');
+   buttonClicked(valueEmitted: boolean) {
+    console.log('buttonClicked', valueEmitted);
    }
 }
