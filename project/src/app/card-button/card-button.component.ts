@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-button.component.scss']
 })
 export class CardButtonComponent {
+  onButtonClick() {
+    console.log('CLICOU')
+  }
 
 }
