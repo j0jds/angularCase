@@ -8,4 +8,8 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() planType: string = '';
   @Input() planPrice: number = 0 ;
+
+   buttonClicked() {
+    console.log('buttonClicked');
+   }
 }
