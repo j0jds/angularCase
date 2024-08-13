@@ -1,3 +1,24 @@
-<app-button [text]="'Adquirir'" [style]="'white'" [disabled]="true" (clicked)="buttonClicked()"></app-button>
+<!-- <app-button [text]="'Adquirir'" [style]="'white'" [disabled]="true" (clicked)="buttonClicked()"></app-button>
 
-<app-button [text]="'Obter'" [style]="'purple'"></app-button>
+<app-button [text]="'Obter'" [style]="'purple'"></app-button>  -->
+<div class="cards-container" >
+
+<app-card 
+
+[planType]="'Simples'" 
+[planPrice]="100" 
+[cardStyle]="'orange'"
+(buttonClicked)="onCardButtonClicked()"
+
+></app-card>
+
+<app-card 
+
+[planType]="'Completo'" 
+[planPrice]="200" 
+[cardStyle]="'purple'"
+(buttonClicked)="onCardButtonClicked()"
+
+></app-card>
+
+</div>
