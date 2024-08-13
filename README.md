@@ -1,73 +1,73 @@
-# Projeto de Estudos do Curso da Udemy "Curso de Angular v2 ao v17: Básico ao Profissional"
+# Study Project for the Udemy Course "Angular Course v2 to v17: Basic to Professional"
 
-Este repositório contém os projetos e exercícios desenvolvidos durante o curso "Curso de Angular v2 ao v17: Básico ao Profissional" disponível na Udemy. O curso abrange desde os conceitos básicos até as técnicas avançadas do framework Angular, proporcionando uma formação completa para desenvolvedores.
+This repository contains the projects and exercises developed during the course "Angular Course v2 to v17: Basic to Professional" available on Udemy. The course covers everything from basic concepts to advanced techniques of the Angular framework, providing a comprehensive education for developers.
 
-## Índice
+## Table of Contents
 
-- Descrição
-- Requisitos
-- Conteúdo do Curso
-- Pré-requisitos
+- Description
+- Requirements
+- Course Content
+- Prerequisites
 
-## Descrição
+## Description
 
-Atualmente, o Angular é um dos três frameworks mais utilizados e poderosos do mercado, sendo amplamente adotado por empresas de grande porte. Ter conhecimento sobre como ele funciona é de extrema importância.
+Currently, Angular is one of the three most widely used and powerful frameworks in the market, being extensively adopted by large companies. Understanding how it works is of utmost importance.
 
-Este curso é voltado para desenvolvedores que estão começando no mundo do Angular, assim como para aqueles com anos de experiência. Aqui, você encontrará informações e dicas avançadas sobre o framework Angular.
+This course is aimed at developers who are new to Angular, as well as those with years of experience. Here, you will find advanced information and tips about the Angular framework.
 
-O objetivo deste curso é tornar-se um dos mais completos sobre Angular no mercado. Com um conteúdo explicado de maneira didática e gradual, o curso visa ajudá-lo a se destacar dentro da sua equipe. Além disso, para quem está iniciando, a curva de aprendizado será significativamente reduzida.
+The goal of this course is to become one of the most complete Angular courses on the market. With content explained in a didactic and gradual manner, the course aims to help you stand out within your team. Additionally, for beginners, the learning curve will be significantly reduced.
 
-Neste primeiro lançamento, será oferecido mais de 50 horas de conteúdo focado em Angular, com muita prática, para que você aprenda Angular da maneira correta, criando aplicações bem organizadas e componentizadas.
+In this initial release, more than 50 hours of Angular-focused content will be offered, with plenty of practice, so you can learn Angular the right way, creating well-organized and componentized applications.
 
-Um dos diferenciais deste curso é a grande quantidade de conteúdo extra de altíssima qualidade, abordando tópicos avançados sobre as tecnologias relacionadas ao Angular, tornando você um desenvolvedor Front-End mais completo.
+One of the differentiators of this course is the large amount of high-quality extra content, covering advanced topics related to Angular technologies, making you a more complete Front-End developer.
 
-## Requisitos
+## Requirements
 
-- Sistema operacional Windows, macOS ou Linux
-- Entendimento básico/intermediário sobre JavaScript, HTML, CSS e TypeScript
+- Windows, macOS, or Linux operating system
+- Basic/intermediate understanding of JavaScript, HTML, CSS, and TypeScript
 
-## Conteúdo do Curso
+## Course Content
 
-Ao longo do curso, você aprenderá sobre:
+Throughout the course, you will learn about:
 
-- Organização de projeto (pastas, arquivos e nomenclaturas)
-- Desenvolvimento de aplicações web em Angular
-- Padronização de aplicações Angular
-- Organização de projetos Angular
-- Componentização (evitando a duplicação de código)
-- Criação de Templates dinâmicos
-- Binding de dados (Event Binding, Property Binding, Attribute Binding, etc.)
-- Projeção de Conteúdo
+- Project organization (folders, files, and naming conventions)
+- Web application development with Angular
+- Angular application standardization
+- Angular project organization
+- Componentization (avoiding code duplication)
+- Creating dynamic templates
+- Data binding (Event Binding, Property Binding, Attribute Binding, etc.)
+- Content Projection
 - Pipes
-- Criação de formulários com Template-Driven Forms
-- Utilização do Angular Material
-- Diretivas
-- E muito mais
+- Creating forms with Template-Driven Forms
+- Using Angular Material
+- Directives
+- And much more
 
-Isso e muito mais estão disponíveis neste primeiro lançamento, e ainda há muitas horas de conteúdo interessante por vir.
+All this and much more are available in this first release, and many more hours of interesting content are yet to come.
 
-Nas sessões extras, você estudará temas avançados como:
+In the extra sessions, you will study advanced topics such as:
 
-- Chamadas HTTP (Request e Response)
+- HTTP Requests and Responses
 - CORS
-- Renderização de páginas Web (Critical Rendering Path)
+- Web Page Rendering (Critical Rendering Path)
 - SASS
 - CSS
-- Padronização BEM
-- Build System (Grunt e Webpack)
+- BEM Standardization
+- Build System (Grunt and Webpack)
 - NPM
-- JavaScript (polyfills, programação funcional, fluxo de execução, etc.)
-- TypeScript (Decorators, tipagens dinâmicas, etc.)
-- E mais
+- JavaScript (polyfills, functional programming, execution flow, etc.)
+- TypeScript (Decorators, dynamic typing, etc.)
+- And more
 
-Esses são alguns dos conteúdos extras que envolvem o framework Angular que exploraremos ao longo do curso.
+These are some of the extra content topics involving the Angular framework that we will explore throughout the course.
 
-## Pré-requisitos
+## Prerequisites
 
-- Node.js (versão LTS recomendada)
+- Node.js (LTS version recommended)
 - Angular CLI
-- Editor de código (VSCode recomendado)
+- Code editor (VSCode recommended)
 
-## Link 
+## Link
 
 - https://www.udemy.com/course/super-treinamento-de-angular-16-do-basico-ao-avancado/?couponCode=ST10MT8624
