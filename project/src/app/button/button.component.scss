@@ -1,0 +1,16 @@
+.button {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px;
+
+    &--white {
+        background-color: #329651;
+    }
+
+    &--purple {
+        background-color: purple;
+    }
+}
