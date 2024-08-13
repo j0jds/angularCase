@@ -5,6 +5,13 @@
     border-radius: 30px;
     font-weight: bold;
     padding: 5px;
+    cursor: pointer;
+
+    position: relative;
+
+    &:active {
+        bottom: -1px;
+    }
 
     &--white {
         background-color: #329651;
