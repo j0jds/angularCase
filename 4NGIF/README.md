@@ -1,27 +1,23 @@
 # 4NGIF
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+This project is dedicated to exploring and understanding the **NgIf** structural directive in Angular. It is part of a series of focused projects created to deepen the understanding of key Angular concepts, as suggested in the "Curso de Angular v2 ao v17: Básico ao Profissional" on Udemy.
 
-## Development server
+## Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The **NgIf** directive is a fundamental tool in Angular for conditionally rendering elements in the DOM. This project demonstrates how to use **NgIf** to control the presence of HTML elements based on specific conditions evaluated in the component class.
 
-## Code scaffolding
+## Key Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Conditional Rendering**: Use of the **NgIf** directive to display or hide elements based on a boolean condition.
+- **Dynamic Content Display**: Implementation of dynamic content that appears or disappears depending on the logic defined in the component.
+- **Simplified UI Control**: Example scenarios where **NgIf** is used to simplify the user interface by removing unnecessary elements from the DOM when they are not needed.
 
-## Build
+## Key Angular Concept: NgIf
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **NgIf Directive**: The **NgIf** directive is a structural directive that conditionally includes or excludes an element in the DOM. When the condition assigned to **NgIf** evaluates to `true`, the element is added to the DOM; if `false`, the element is removed.
 
-## Running unit tests
+## Learning Objectives
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Understand the role and importance of the **NgIf** directive in Angular applications.
+- Learn to use **NgIf** for managing the visibility of components and elements based on component logic.
+- Gain experience in simplifying and optimizing the user interface by conditionally rendering elements.
