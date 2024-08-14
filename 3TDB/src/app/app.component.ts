@@ -9,9 +9,10 @@ export class AppComponent {
   
   name: string = 'Joel';
 
-  handleInputChange(event: any) {
+  handleInputChange(event: string) {
     console.log(event);
-    this.name = event;
+
+    this.name = event.toUpperCase();
   }
 
 }
