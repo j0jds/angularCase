@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+ Ativador = true;
+
+  toggleAtivador() {
+    this.Ativador = !this.Ativador;
+  }
 
 }
