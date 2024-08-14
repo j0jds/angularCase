@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project4-NGLF": {
+    "4NGIF": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/project4-nglf",
+            "outputPath": "dist/4ngif",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "project4-NGLF:build:production"
+              "buildTarget": "4NGIF:build:production"
             },
             "development": {
-              "buildTarget": "project4-NGLF:build:development"
+              "buildTarget": "4NGIF:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
