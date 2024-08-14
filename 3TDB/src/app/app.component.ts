@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'twodatabinding';
+  
+  name: string = 'Joel';
+
+  handleInputChange(event: any) {
+    console.log(event);
+    this.name = event;
+  }
+
 }
