@@ -6,6 +6,7 @@
     let isLast = last; 
     let isFirst = first" 
     [class.item--odd]="isOdd"
+    [class.item--highlighted]="personSelectedIndex === i"
     (click)="selectPerson(i)">
 
     <p class="item__name">{{ i }} - {{ person.name }}</p>

@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+personSelectedIndex: number | undefined;
+
 listPeople = [
     { name: 'Joel', age: 70, },
     { name: 'Manoel', age: 12, },
@@ -16,6 +18,7 @@ listPeople = [
 
 selectPerson(index: number){
   console.log(index);
+  this.personSelectedIndex = index;
 }
 
 }
