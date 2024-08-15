@@ -5,35 +5,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.item {
-    cursor: pointer;
-    background-color: rgb(0, 68, 2);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-
-    &__name {
-        color: white;
-        font-size: 25px;
-        font-weight: 800;
-        border-radius: 10px;
-    }
-
-    &__age {
-        color: white;
-        font-size: 20px;
-        font-weight: 300;
-        border-radius: 10px;
-    }
-
-    &--odd {
-        background-color: rgb(3, 1, 78)
-    }
-
-    &--highlighted {
-        color: rgb(255, 255, 255);
-        background-color: rgb(177, 106, 0);
-        border: 3px solid rgb(0, 85, 0);
-    }
-}
