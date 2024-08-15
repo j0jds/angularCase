@@ -1,8 +1,21 @@
+<!--
+
 <div style="background-color: darkblue;" *ngIf="Ativador; else meuTemplate">Sou uma div!</div>
 
-<ng-template #meuTemplate>
-<div style="background-color: darkred;">Sou outra div!</div>
-</ng-template>  
+    <ng-template #meuTemplate>
+        <div style="background-color: darkred;">Sou outra div!</div>
+    </ng-template>
 
+-->
+
+<ng-container *ngIf="Ativador; then meuTemplate; else meuOutroTemplate"></ng-container> 
+    
+    <ng-template #meuTemplate>
+        <div style="background-color: darkred;">Sou a div "then"!</div>
+    </ng-template>
+    
+    <ng-template #meuOutroTemplate>
+        <div style="background-color: rgb(0, 105, 5);">Sou a div "else"!</div>
+    </ng-template>
 
 <button (click)="toggleAtivador()"></button>
