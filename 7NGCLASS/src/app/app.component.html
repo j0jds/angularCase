@@ -19,3 +19,7 @@
 <!-- Arrays -->
 <h1 [ngClass]="['is-big', 'is-green']">Teste#3</h1>
 <h1 [class]="['is-big', 'is-green']">Teste#4</h1>
+
+<!-- Objetos -->
+<h1 [ngClass]="{'is-green': isGreen, 'isOrange': !isGreen}">Teste#5</h1>
+<h1 [class]="{'is-orange': !isGreen, 'isGreen': isGreen}">Teste#6</h1>
