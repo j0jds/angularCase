@@ -1,8 +1,8 @@
-<div style="background-color: darkblue;" *ngIf="false; else meuTemplate">Sou uma div!</div>
+<div style="background-color: darkblue;" *ngIf="Ativador; else meuTemplate">Sou uma div!</div>
 
 <ng-template #meuTemplate>
 <div style="background-color: darkred;">Sou outra div!</div>
-</ng-template>
+</ng-template>  
 
 
 <button (click)="toggleAtivador()"></button>
