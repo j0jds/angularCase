@@ -1,34 +1,39 @@
 .list {
     background-color: rgb(0, 0, 0);
-    padding: 3px;
+    border-radius: 10px;
+    padding: 5px;
     justify-content: center;
     align-items: center;
 }
 
 .item {
     cursor: pointer;
-    background-color: beige;
+    background-color: rgb(0, 68, 2);
     padding: 15px;
+    border-radius: 10px;
     text-align: center;
 
     &__name {
+        color: white;
         font-size: 25px;
-        font-weight: 1000;
+        font-weight: 800;
+        border-radius: 10px;
     }
 
     &__age {
+        color: white;
         font-size: 20px;
-        font-weight: 1000;
+        font-weight: 300;
+        border-radius: 10px;
     }
 
     &--odd {
-        background-color: rgb(107, 122, 189);
+        background-color: rgb(3, 1, 78)
     }
 
     &--highlighted {
-        color: rgb(17, 2, 150);
-        background-color: rgb(255, 241, 47);
-        border: 2px solid rgb(0, 85, 0)
+        color: rgb(255, 255, 255);
+        background-color: rgb(177, 106, 0);
+        border: 3px solid rgb(0, 85, 0);
     }
-
 }
