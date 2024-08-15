@@ -15,7 +15,7 @@ export class PersonComponent {
 @Input({ required: true }) isOdd: boolean = false;
 @Input({ required: true }) isSelected: boolean = false;
 
-@Output() onPersonSelectEmitt = new EventEmitter<number>();
+@Output('personSelected') onPersonSelectEmitt = new EventEmitter<number>();
 
 selectPerson() {
   this.onPersonSelectEmitt.emit(this.personIndex);
