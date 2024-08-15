@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
-  title = 'project7-NGCLASS';
+ isGreen: boolean = true;
+
+ setToGreen() {
+  this.isGreen = true;
+ }
+
+ setToOrange() {
+  this.isGreen = false;
+ }
 }
