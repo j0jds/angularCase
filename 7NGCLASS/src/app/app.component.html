@@ -11,3 +11,11 @@
 <button (click)="setToGreen()">Verde</button>
 
 <button (click)="setToOrange()">Laranja</button>
+
+<!-- Strings -->
+<h1 [ngClass]="'is-big is-green'">Teste#1</h1>
+<h1 [class]="'is-big is-green'">Teste#2</h1>
+
+<!-- Arrays -->
+<h1 [ngClass]="['is-big', 'is-green']">Teste#3</h1>
+<h1 [class]="['is-big', 'is-green']">Teste#4</h1>
