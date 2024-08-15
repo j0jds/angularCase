@@ -13,4 +13,9 @@ listPeople = [
     { name: 'Batista', age: 65, },
     { name: 'Darcy', age: 99, },
   ];
+
+selectPerson(index: number){
+  console.log(index);
+}
+
 }
