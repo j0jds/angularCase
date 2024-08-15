@@ -1,23 +1,13 @@
 <div class="list">
+  <div class="item"
 
-  <div class="item item--odd">
-    <p class="item__name">Joel</p>
-    <p class="item__age">70</p>
-  </div>
-  
-  <div class="item item--highlighted">
-    <p class="item__name">Manoel</p>
-    <p class="item__age">12</p>
-  </div>
-  
-  <div class="item item--odd">
-    <p class="item__name">Batista</p>
-    <p class="item__age">65</p>
-  </div>
-  
-  <div class="item">
-    <p class="item__name">Darcy</p>
-    <p class="item__age">99</p>
-  </div>
+    *ngFor="let person of listPeople; let i = index; let isOdd = odd; let isLast = last; let isFirst = first" 
+    [class.item--odd]="isOdd">
 
+    <p class="item__name">{{ i }} - {{ person.name }}</p>
+    <p class="item__age">{{ person.age }} anos</p>
+    <p class="item__age" *ngIf="isFirst">Primeiro!</p>
+    <p class="item__age" *ngIf="isLast">Último!</p>
+
+  </div>
 </div>
