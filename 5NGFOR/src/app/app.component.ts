@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-listPessoas = []
-
+listPeople = [
+    { name: 'Joel', age: 70, },
+    { name: 'Manoel', age: 12, },
+    { name: 'Batista', age: 65, },
+    { name: 'Darcy', age: 99, },
+  ];
 }
