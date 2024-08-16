@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'project8-PIPES';
+
+  pessoa = {
+    name: 'Felipe',
+    status: 1,
+  };
+
+  pessoa2 = {
+    name: 'Gabriel',
+    status: 2,
+  };
+
+  pessoa3 = {
+    name: 'Henrique',
+    status: 3,
+  };
+
 }
