@@ -9,45 +9,48 @@
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Nome: </span><span>Ciclano da Rocha</span>
+      <span class="mat-h2">Nome: </span><span>{{ user.nome }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Email: </span><span>ciclano&#64;email.com</span>
+      <span class="mat-h2">Email: </span><span>{{ user.email }}</span>
       <!-- Por conta de configurações do Angular, para se colocar um @ no template usa-se o "&#64;" no lugar. -->
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Telefone: </span><span>(81) 91234-5678</span>
+      <span class="mat-h2">Telefone: </span><span>{{ user.telefone }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
       <span class="mat-h2">Endereço: </span
-      ><span>Rua dos Sapos, 42, Recife - PE</span>
+      ><span
+        >{{ user.endereco.rua }}, {{ user.endereco.numero }},
+        {{ user.endereco.cidade }}, {{ user.endereco.estado }}</span
+      >
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Ativo: </span><span>Sim</span>
+      <span class="mat-h2">Ativo: </span><span>{{ user.ativo }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Função: </span><span>Jardineiro</span>
+      <span class="mat-h2">Função: </span><span>{{ user.funcao }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Data de Cadastro: </span><span>07/09/2024</span>
+      <span class="mat-h2">Data de Cadastro: </span><span>{{ user.dataCadastro }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
