@@ -7,4 +7,6 @@ import { UserDetailsComponent } from './user-details/user-details.component';
   exports: [UserDetailsComponent],
   declarations: [UserDetailsComponent],
 })
-export class ComponentsModule { }
+export class ComponentsModule { 
+  
+ }
