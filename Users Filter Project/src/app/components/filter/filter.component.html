@@ -16,7 +16,7 @@
           <input matEndDate placeholder="End date" />
         </mat-date-range-input>
         <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle> <!-- * -->
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle> <!-- Alternador do Datepicker -->
         <mat-date-range-picker #picker></mat-date-range-picker>
       </mat-form-field>
     </div>
@@ -25,12 +25,16 @@
       <mat-form-field>
         <mat-label>Status</mat-label>
         <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value"> <!-- * -->
-            {{ food.viewValue }} <!-- * -->
+          <mat-option *ngFor="let food of foods" [value]="food.value"> <!-- Aqui pega os objetos do TS -->
+            {{ food.viewValue }} <!-- Aqui também pega os objetos do TS -->
           </mat-option>
         </mat-select>
       </mat-form-field>  
     </div>
+
+<div class="form__button">
+  <button mat-raised-button>Basic</button>
+</div>
 
   </form>
 </div>
