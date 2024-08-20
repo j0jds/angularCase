@@ -37,19 +37,19 @@
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Status: </span><span>{{ user.ativo | status }}</span>
+      <span class="mat-h2">Status: </span><span>{{ user.ativo | status | dashIfEmpty }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Função: </span><span>{{ user.funcao }}</span>
+      <span class="mat-h2">Função: </span><span>{{ user.funcao | dashIfEmpty }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Data de Cadastro: </span><span>{{ user.dataCadastro | date: 'dd/MM/yyyy' }}</span>
+      <span class="mat-h2">Data de Cadastro: </span><span>{{ user.dataCadastro | date: 'dd/MM/yyyy' | dashIfEmpty }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
