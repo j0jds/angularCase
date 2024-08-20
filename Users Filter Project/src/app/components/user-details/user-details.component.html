@@ -9,13 +9,13 @@
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Nome: </span><span>{{ user.nome }}</span>
+      <span class="mat-h2">Nome: </span><span>{{ user.nome | dashIfEmpty }}</span>
     </mat-list-item>
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Email: </span><span>{{ user.email }}</span>
+      <span class="mat-h2">Email: </span><span>{{ user.email | dashIfEmpty }}</span>
       <!-- Por conta de configurações do Angular, para se colocar um @ no template usa-se o "&#64;" no lugar. -->
     </mat-list-item>
 
