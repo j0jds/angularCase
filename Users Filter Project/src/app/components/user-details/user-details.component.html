@@ -30,8 +30,7 @@
     <mat-list-item>
       <span class="mat-h2">Endereço: </span
       ><span
-        >{{ user.endereco?.rua }}, {{ user.endereco?.numero }},
-        {{ user.endereco?.cidade }}, {{ user.endereco?.estado }}</span
+        >{{ user.endereco | address }}</span
       >
     </mat-list-item>
 
