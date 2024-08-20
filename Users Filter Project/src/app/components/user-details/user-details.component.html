@@ -22,16 +22,16 @@
     <mat-divider></mat-divider>
 
     <mat-list-item>
-      <span class="mat-h2">Telefone: </span><span>{{ user.telefone }}</span>
-    </mat-list-item>
+      <span class="mat-h2">Telefone: </span><span>{{ user.telefone | phone }}</span>
+    </mat-list-item>  
 
     <mat-divider></mat-divider>
 
     <mat-list-item>
       <span class="mat-h2">Endereço: </span
       ><span
-        >{{ user.endereco.rua }}, {{ user.endereco.numero }},
-        {{ user.endereco.cidade }}, {{ user.endereco.estado }}</span
+        >{{ user.endereco?.rua }}, {{ user.endereco?.numero }},
+        {{ user.endereco?.cidade }}, {{ user.endereco?.estado }}</span
       >
     </mat-list-item>
 
