@@ -9,7 +9,7 @@
 
         <div class="main-div">
            <!-- Conteúdo da Div Principal (80% de Altura) -->
-        <app-users-list></app-users-list>
+        <app-users-list (userSelected)="userSelected = $event"></app-users-list>
         </div>
 
     </div>
