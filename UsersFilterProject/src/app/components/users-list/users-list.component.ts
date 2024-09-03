@@ -1,7 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 import { IUser } from '../../interfaces/user/user.interface';
-import { UsersList } from '../../data/users-list';
-
 
 @Component({
   selector: 'app-users-list',
@@ -10,9 +8,9 @@ import { UsersList } from '../../data/users-list';
 })
 export class UsersListComponent {
   displayedColumns: string[] = ['name','date','status'];
-  usersList: IUser[] = UsersList;
+  @Input({ required: true }) usersList: IUser[] = [];
 //Daqui.
- @Output('userSelected') userSelectedEmitt = new EventEmitter<IUser>();
+@Output('userSelected') userSelectedEmitt = new EventEmitter<IUser>();
 // Nesse caso a tipagem do método userSelectedEmitt foi o IUser (a interface de usuário que eu criei anteriormente).
 // Esse já foi um exemplo usado em outras ocasiões, mas achei bom tomar nota disso nesse momento.
 
