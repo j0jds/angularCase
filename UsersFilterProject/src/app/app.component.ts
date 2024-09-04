@@ -33,12 +33,18 @@ export class AppComponent implements OnInit {
       this.usersList
     );
   }
+
   filterUsersList(filterOptions: IFilterOptions, usersList: IUser[]): IUser[] {
     let filteredList: IUser[] = [];
 
     filteredList = this.filterUsersListByName(filterOptions.name, usersList);
+    filteredList = this.filterUsersListByStatus(filterOptions.status, filteredList);
     return filteredList;
   }
+  filterUsersListByStatus(status: boolean | undefined, filteredList: IUser[]): IUser[] {
+    const 
+  }
+
   filterUsersListByName(name: string | undefined, usersList: IUser[]): IUser[] {
     const NAME_NOT_TYPED = name === undefined;
 
@@ -48,7 +54,7 @@ export class AppComponent implements OnInit {
     const filteredList = usersList.filter((user) =>
       user.nome.toLowerCase().includes(name.toLowerCase())
     );
-
     return filteredList;
   }
+
 }
