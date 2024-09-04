@@ -15,17 +15,10 @@ export class FilterComponent {
     status: undefined,
   };
   
-  
   statusList = [
     { description: 'Ativo', value: true },
     { description: 'Inativo', value: false }
   ];
-
-  dateSelected(date: any) {
-    console.log(date);
-    console.log(date instanceof Date);
-
-  }
 
   onFilter() {
     console.log(this.filterOptions);
