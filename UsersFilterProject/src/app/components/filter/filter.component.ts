@@ -23,6 +23,7 @@ export class FilterComponent {
 
   dateSelected(date: any) {
     console.log(date);
+    console.log(date instanceof Date);
 
   }
 
