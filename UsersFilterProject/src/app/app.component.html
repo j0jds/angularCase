@@ -4,7 +4,7 @@
 
         <div class="top-div">
             <!-- Conteúdo da Div Superior -->
-            <app-filter></app-filter>
+            <app-filter (onFilter)="onFilter($event)"></app-filter>
         </div>
 
         <div class="main-div">
