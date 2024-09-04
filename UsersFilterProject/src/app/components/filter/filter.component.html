@@ -1,10 +1,10 @@
 <div class="filter">
-  <form class="form">
+  <div class="form">
 
     <div class="form__name">
       <mat-form-field class="form">
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Digite seu nome..." />
+        <input matInput placeholder="Digite seu nome..." name="name" [(ngModel)]="filterOptions.name"/>
       </mat-form-field>
     </div>
 
@@ -12,7 +12,7 @@
       <mat-form-field>
         <mat-label>Data de Cadastro</mat-label>
         <mat-date-range-input [rangePicker]="picker">
-          <input matStartDate placeholder="Start date" />
+          <input matStartDate placeholder="Start date" [(ngModel)]="filterOptions.startDate" (ngModelChange)="dateSelected($event)"/>
           <input matEndDate placeholder="End date" />
         </mat-date-range-input>
         <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
@@ -24,9 +24,9 @@
     <div class="form__status"> 
       <mat-form-field>
         <mat-label>Status</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value"> <!-- Aqui pega os objetos do TS -->
-            {{ food.viewValue }} <!-- Aqui também pega os objetos do TS -->
+        <mat-select [(ngModel)]="filterOptions.status">
+          <mat-option *ngFor="let status of statusList" [value]="status.value">
+              {{ status.description }}
           </mat-option>
         </mat-select>
       </mat-form-field>  
@@ -36,5 +36,4 @@
   <button mat-raised-button color="primary">Basic</button>
 </div>
 
-  </form>
 </div>
