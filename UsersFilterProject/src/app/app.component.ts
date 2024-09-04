@@ -9,6 +9,10 @@ import { IFilterOptions } from './interfaces/filter-options.interface';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
+  usersList: IUser[] = [];
+  usersListFiltered: IUser[] = [];
+  userSelected: IUser = {} as IUser;
+  showUserDetails: boolean = false;
 
   ngOnInit() {
     setTimeout(() => {
@@ -16,9 +20,6 @@ export class AppComponent implements OnInit {
     }, 1);
   }
 
-  usersList: IUser[] = [];
-  userSelected: IUser = {} as IUser;
-  showUserDetails: boolean = false;
 
   onUserSelected(user: IUser) {
     this.userSelected =  user;
@@ -28,5 +29,4 @@ export class AppComponent implements OnInit {
   onFilter(filterOptions: IFilterOptions) {
     console.log(filterOptions);
   }
-
  }
