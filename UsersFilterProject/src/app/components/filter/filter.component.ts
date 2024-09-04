@@ -1,20 +1,32 @@
 import { Component } from '@angular/core';
-
-interface Food {
-  value: string;
-  viewValue: string;
-}
+import { IFilterOptions } from '../../interfaces/filter-options.interface';
 
 @Component({
   selector: 'app-filter', 
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.scss',
 })
+
 export class FilterComponent {
-  foods: Food[] = [
-    {
-      value: 'Teste',
-      viewValue: 'Teste',
-    },
+  filterOptions: IFilterOptions = {
+    name: undefined,
+    startDate: undefined,
+    endDate: undefined,
+    status: undefined,
+  };
+  
+  
+  statusList = [
+    { description: 'Ativo', value: true },
+    { description: 'Inativo', value: false }
   ];
+
+  dateSelected(date: any) {
+    console.log(date);
+
+  }
+
+  onFilter() {
+    console.log(this.filterOptions);
+  }
 }
