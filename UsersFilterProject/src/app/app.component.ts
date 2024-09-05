@@ -65,12 +65,13 @@ export class AppComponent implements OnInit {
       return usersList;
     }
 
-    const listFiltered = usersList.filter((user) =>
-      isWithinInterval(new Date(user.dataCadastro), {
-        start: startDate,
-        end: endDate,
-      })
-    );
+    const checkDateInterval = (user: IUser) =>
+    isWithinInterval(new Date(user.dataCadastro), {
+      start: startDate,
+      end: endDate,
+    });
+
+    const listFiltered = usersList.filter(checkDateInterval);
 
     return listFiltered;
   }
