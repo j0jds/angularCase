@@ -1,3 +1,5 @@
-<input type="text" [(ngModel)]="teste" />
+<input type="text" #meuInput ngModel />
 
-Valor: {{ teste }}
+Valor: {{ meuInput.value }}
+
+<button (click)="clicou(meuInput)">Atualizar</button>

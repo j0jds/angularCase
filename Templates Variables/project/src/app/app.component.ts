@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  teste = '';
+  clicou(input: any) {
+    console.log(input.value);
+  }
 }
