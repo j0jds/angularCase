@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  clicou(input: HTMLInputElement) {
-    console.log(input.value);
 
-    input.value = 'Atualizado';
-    
+}
+
+const funcaoPai = () => {
+  let pai = 'pai';
+
+  const funcaoFilha = () => {
+    let filha = 'filha';
+
+    pai = 'teste';
   }
 }
