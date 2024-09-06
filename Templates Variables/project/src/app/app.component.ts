@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  clicou(input: any) {
+  clicou(input: HTMLInputElement) {
     console.log(input.value);
+
+    input.value = 'Atualizado';
+    
   }
 }
