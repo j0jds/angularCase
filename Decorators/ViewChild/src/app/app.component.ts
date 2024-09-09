@@ -24,4 +24,7 @@ export class AppComponent {
     this.meuInputEl.nativeElement.focus();
   }
 
+  updateDivContent() {
+    this.minhaDivEl.nativeElement.textContent = 'Conteúdo Atualizado!!!';
+  }
 }
