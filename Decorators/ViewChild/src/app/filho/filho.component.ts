@@ -9,6 +9,6 @@ export class FilhoComponent {
   message: string = 'Sou o componente filho!';
 
   dizerOi() {
-    alert('Oi!!!');
+    alert('Oi!!!!!');
   }
 }

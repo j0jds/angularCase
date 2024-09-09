@@ -3,13 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { FilhoComponent } from './filho/filho.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    FilhoComponent,
-  ]})
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +13,8 @@ import { FilhoComponent } from './filho/filho.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
