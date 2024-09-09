@@ -1,31 +1,15 @@
-import {
-  Component,
-  ViewChild,
-  AfterViewInit,
-  ElementRef,
-  OnInit,
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  @ViewChild('meuInput')
-  meuInputEl!: ElementRef<HTMLInputElement>;
 
-  constructor() {
-    console.log('constructor');
-  }
-
-  ngOnInit() {
-    console.log('ngOnInit', this.meuInputEl);
-  }
-
-  ngAfterViewInit(): void {
-    console.log('ngAfterViewInit', this.meuInputEl);
-
-    this.meuInputEl.nativeElement.focus();
-  }
+export class AppComponent {
+  buttonsList = [
+    'Botão 1',
+    'Botão 2',
+    'Botão 3',
+  ];
 }
