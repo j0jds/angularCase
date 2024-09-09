@@ -3,11 +3,10 @@
 </div>
 
 <div class="pai" *ngIf="true">
-  <input #inputPai ngModel />
-  <!-- Pai: {{ inputFilho.value }} -->
-
-  <div class="filho" *ngIf="true">
-    <input #inputFilho />
-    Filho: {{ inputFilho.value }}
+   Pai: <input #inputPai ngModel />
+   Pai: {{ inputFilho.value }}
+  <div class="filho">
+   Filho: <input #inputFilho />
+   Filho: {{ inputPai.value }}
   </div>
 </div>
