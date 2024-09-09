@@ -1,17 +1,31 @@
-import { Component, ViewChild } from '@angular/core';
-import { FilhoComponent } from './filho/filho.component';
+import {
+  Component,
+  ViewChild,
+  AfterViewInit,
+  ElementRef,
+  OnInit,
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  // @ViewChild('filhoComp') filhoCompRef!: FilhoComponent;
-  @ViewChild(FilhoComponent) filhoCompRef!: FilhoComponent;
+export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChild('meuInput')
+  meuInputEl!: ElementRef<HTMLInputElement>;
 
-  hello() {
-    this.filhoCompRef.dizerOi();
-    this.filhoCompRef.message = 'Eu disse "Oi"!';
+  constructor() {
+    console.log('constructor');
+  }
+
+  ngOnInit() {
+    console.log('ngOnInit', this.meuInputEl);
+  }
+
+  ngAfterViewInit(): void {
+    console.log('ngAfterViewInit', this.meuInputEl);
+
+    this.meuInputEl.nativeElement.focus();
   }
 }
