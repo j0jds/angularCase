@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="left-container">
+
+        <div class="top-div">
+            <!-- Conteúdo da Div Superior -->
+            <app-filter (onFilter)="onFilter($event)"></app-filter>
+        </div>
+
+        <div class="main-div">
+           <!-- Conteúdo da Div Principal (80% de Altura) -->
+        <app-users-list [usersList]="usersListFiltered" (userSelected)="onUserSelected($event)"></app-users-list>
+        </div>
+
+    </div>
+
+    <div class="right-container">
+        <!-- Conteúdo da Div da Direita -->
+        <app-user-details [user]="userSelected" *ngIf="showUserDetails"></app-user-details>
+    </div>
+
+
+</div>
