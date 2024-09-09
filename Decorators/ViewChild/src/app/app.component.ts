@@ -5,14 +5,23 @@ import { FilhoComponent } from './filho/filho.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
+  @ViewChild('meuInput') 
+  meuInputEl!: ElementRef<HTMLInputElement> ;
 
-@ViewChild('filhoComp')
-  filhoCompRef!: FilhoComponent;
-
-  hello() {
-    this.filhoCompRef.dizerOi();
-    this.filhoCompRef.message = 'Eu disse Oi!';
+  @ViewChild('minhaDiv')
+  minhaDivEl!: ElementRef<HTMLDivElement>;
+  
+  updateInputText () {
+    console.log(this.meuInputEl);
+    this.meuInputEl.nativeElement.value = 'Texto Atualizado!';
   }
+
+  focus() {
+    this.meuInputEl.nativeElement.focus();
+  }
+
 }
