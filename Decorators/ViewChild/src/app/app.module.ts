@@ -8,6 +8,11 @@ import { FilhoComponent } from './filho/filho.component';
 @NgModule({
   declarations: [
     AppComponent,
+    FilhoComponent,
+  ]})
+@NgModule({
+  declarations: [
+    AppComponent,
     FilhoComponent
   ],
   imports: [
