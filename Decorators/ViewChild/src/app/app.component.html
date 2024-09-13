@@ -1,5 +1,11 @@
 <button 
+#meuButton
 *ngFor="let btn of buttonsList"
 (click)="changeColor($event)">
 {{ btn }}
+</button>  
+
+<button 
+(click)="resetButtons()">
+Resetar
 </button>  
