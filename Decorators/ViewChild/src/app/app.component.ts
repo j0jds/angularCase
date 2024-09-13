@@ -17,7 +17,7 @@ export class AppComponent {
   buttonsEl!: QueryList<ElementRef<HTMLButtonElement>>;
 
   ngAfterViewInit() {
-    console.log(this.buttonsEl);
+    console.log(this.buttonsEl.toArray());
   }
 
   changeColor(event: Event){
@@ -26,5 +26,14 @@ export class AppComponent {
     const btnElement = event.target as HTMLButtonElement;
   
     btnElement.style.backgroundColor = 'orange';
+    btnElement.style.color = 'white';
+  }
+
+  resetButtons() {
+    this.buttonsEl.forEach((btnEl) => {
+      console.log(btnEl);
+      btnEl.nativeElement.style.backgroundColor = '';
+      btnEl.nativeElement.style.color = 'black';
+    });
   }
 }
