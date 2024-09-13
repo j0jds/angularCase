@@ -1,6 +1,7 @@
 <button 
 #meuButton
-*ngFor="let btn of buttonsList"
+class="btn-{{ i }}"
+*ngFor="let btn of buttonsList; let i = index"
 (click)="changeColor($event)">
 {{ btn }}
 </button>  
