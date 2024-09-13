@@ -38,7 +38,9 @@ export class AppComponent {
   }
 
   primeiro() {
-    const primeiro = this.buttonsEl.get(0);
+    // const primeiro = this.buttonsEl.get(0);
+
+    const primeiro = this.buttonsEl.find((btnEl) => btnEl.nativeElement.className === 'btn-0');
     console.log(primeiro); 
   }
 }
