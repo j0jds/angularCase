@@ -18,6 +18,10 @@ export class AppComponent {
 
   ngAfterViewInit() {
     console.log(this.buttonsEl);
+
+    this.buttonsEl.changes.subscribe((result) => {
+      console.log(result);
+    });
   }
 
   changeColor(event: Event){
@@ -46,5 +50,9 @@ export class AppComponent {
     const primeiro =
       this.buttonsEl.toArray()[0];
     console.log(primeiro);
+  }
+
+  remove() {
+    this.buttonsList.shift();  
   }
 }
