@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SemDiretivaComponent } from './sem-diretiva/sem-diretiva.component';
 import { ComDiretivaComponent } from './com-diretiva/com-diretiva.component';
-import { HighlightDirective } from './highlight.directive';
+import { HighlightDirective } from '../app/directives/highlight.directive';
 
 @NgModule({
   declarations: [
