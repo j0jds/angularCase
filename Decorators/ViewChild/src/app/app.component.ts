@@ -22,6 +22,9 @@ export class AppComponent {
 
   changeColor(event: Event){
     console.log(event);
-  }
 
+    const btnElement = event.target as HTMLButtonElement;
+  
+    btnElement.style.backgroundColor = 'orange';
+  }
 }
