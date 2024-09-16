@@ -1,13 +1,13 @@
-<div appHighlight>
+<!-- <div appHighlight>
   <h1>
     .seroirepsa mutatpulov sitaicipsrep masoirobal subirolod rutanrepsa ,mediuq
     mullI ?rutairap ,murtsoN !maspi sumasucca tnuicsen tidepmi eaitselom sibon
     eadnasucer idommoc teineve tu aguf aitilloM .tile gnicisipida rutetcesnoc
     tema tis ,rolod muspi meroL
   </h1>
-</div>
+</div> -->
 
-<div class="buttons">
+<!-- <div class="buttons">
   <button disabled>Button</button>
 
   <button [attr.disabled]="false">2nd Button</button>
@@ -15,4 +15,20 @@
   <button [disabled]="false">3rd Button</button>
 
   <button appDisabled>Button + appDisabled</button>
-</div>
+</div> -->
+
+<p style="background-color: orange; color: white;">Parágrafo Normal</p>
+
+<p [attr.style]="'background-color: orange; color:white;'">Attr</p>
+
+<p [style]="'background-color: orange; color:white;'">Prop</p>
+
+<p [style]="{
+  backgroundColor: 'orange',
+  color: 'white',
+}">Prop Obj</p>
+
+<p appStyle>Diretiva</p>
+<p appStyle>Diretiva</p>
+
+
