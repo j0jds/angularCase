@@ -5,5 +5,5 @@ import { Directive, HostBinding } from "@angular/core"
 })
 
 export class ClassDirective {
-    
+    @HostBinding('attr.class') attrClass = 'meu-texto meu-size'
 }
