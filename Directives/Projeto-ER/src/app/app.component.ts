@@ -7,13 +7,11 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 })
 export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild('minhaDiv') divEl!: ElementRef<HTMLDivElement>;
-
-  constructor(private readonly _elRef: ElementRef) {
-    this._elRef
-  }
+  constructor(private readonly _elRef: ElementRef) { }
 
   ngOnInit() {
       console.log(this._elRef);
+      this._elRef.nativeElement.querySelector('#minha-outra-div');
   }
 
   ngAfterViewInit() {
