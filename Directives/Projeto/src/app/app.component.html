@@ -1,1 +1,10 @@
 <p class="meu-texto">Normal</p>
+
+<p [attr.class]="'meu-texto'">Attr</p>
+
+<p [className]="'meu-texto meu-size'">Prop Class Name</p>
+
+<p [class]="{
+    'meu-texto': true,
+    'meu-size': true
+}">Prop Class</p>
