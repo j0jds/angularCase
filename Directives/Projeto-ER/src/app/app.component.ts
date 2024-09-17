@@ -27,7 +27,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     // this._elRef.nativeElement.appendChild(novaDiv);
 
   }
-
   
 
 }
