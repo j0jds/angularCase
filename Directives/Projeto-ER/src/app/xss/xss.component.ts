@@ -25,7 +25,8 @@ export class XSSComponent {
     const text = this._renderer2.createText(inputText);
 
     this._renderer2.appendChild(divEl, text);
-    this._renderer2.setStyle(divEl, 'color', 'red');
+    this._renderer2.setStyle(divEl, 'color', 'green');
+    this._renderer2.addClass(divEl, 'bg-red');
 
     this._renderer2.appendChild(this._elRef.nativeElement, divEl);
   }
