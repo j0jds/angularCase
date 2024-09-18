@@ -2,56 +2,74 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
-  font-family: "Poppins", sans-serif;
-}
+  background-color: black;
+  font-family: 'Poppins', sans-serif; }
 
 .container {
   width: 100%;
   height: 100%;
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.container .item {
-  width: 50%;
   padding: 10px;
-}
+  display: flex;
+  flex-wrap: wrap; }
+  .container .item {
+    width: 50%;
+    padding: 10px; }
 
 .balance-card {
-  background-color: whitesmoke;
-  text-align: left;
-  padding: 3px;
   border: none;
   overflow: hidden;
   border-radius: 5px;
-}
-
-.balance-header {
-  background-color: orange;
-  width: 100%;
-}
+  background-color: white; }
+  .balance-card__header {
+    padding: 15px;
+    background-color: orange;
+    display: flex;
+    align-items: center; }
+    .balance-card__header p {
+      font-size: 20px; }
+  .balance-card__header-title {
+    display: flex;
+    align-items: center;
+    margin-right: auto; }
+    .balance-card__header-title h1 {
+      font-size: 20px; }
+  .balance-card__header-icon {
+    width: 40px;
+    margin-right: 10px; }
+  .balance-card__content {
+    padding: 15px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white; }
+  .balance-card__item {
+    display: flex;
+    align-items: center;
+    padding: 20px; }
+  .balance-card__line {
+    border: 0.5px solid #9e9e9e; }
+  .balance-card__square {
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 12px; }
 
 .credit-card {
   background-color: whitesmoke;
   text-align: left;
-  padding: 3px;
-}
+  padding: 3px; }
 
 .credit-header {
   background-color: orange;
-  width: 100%;
-}
+  width: 100%; }
 
 .debit-header {
   background-color: orange;
-  width: 100%;
-}
+  width: 100%; }
 
 .client-header {
   background-color: green;
-  width: 100%;
-}
+  width: 100%; }
