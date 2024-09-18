@@ -2,12 +2,26 @@
     background-color: whitesmoke;
     text-align: left;
     padding: 3px;
-    border: none;
-    overflow: hidden;
     border-radius: 5px;
+
+    &__balance-header {
+        padding: 20px;
+        background-color: orange;
+        width: 100%;
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+    
+    &__balance-content {
+    
+    }
+    
+    &__balance-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
 }
 
-.balance-header {
-    background-color: orange;
-    width: 100%;
-}
