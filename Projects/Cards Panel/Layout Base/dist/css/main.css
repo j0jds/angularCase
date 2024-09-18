@@ -57,11 +57,3 @@ body {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0px 12px; }
-
-.debit-header {
-  background-color: orange;
-  width: 100%; }
-
-.client-header {
-  background-color: green;
-  width: 100%; }
