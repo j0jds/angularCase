@@ -1,29 +1,14 @@
 <div class="container">
-  <app-card-header
-    [headerType]="'Saldos Disponíveis'"
-    [headerStyle]="'orange'"
-  ></app-card-header>
-
-  <app-card-body></app-card-body>
-
-  <app-card-header
-    [headerType]="'Cartão de Crédito'"
-    [headerStyle]="'orange'"
-  ></app-card-header>
-
-  <app-card-body></app-card-body>
-
-  <app-card-header
-    [headerType]="'Cartão de Débito'"
-    [headerStyle]="'orange'"
-  ></app-card-header>
-
-  <app-card-body></app-card-body>
-
-  <app-card-header
-    [headerType]="'Informações do Cliente'"
-    [headerStyle]="'cyan'"
-  ></app-card-header>
-
-  <app-card-body></app-card-body>
+  <div class="item">
+    <app-balance-card></app-balance-card>
+  </div>
+  <div class="item">
+    <app-credit-card></app-credit-card>
+  </div>
+  <div class="item">
+    <app-debit-card></app-debit-card>
+  </div>
+  <div class="item">
+    <app-client-infos-card></app-client-infos-card>
+  </div>
 </div>

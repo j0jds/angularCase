@@ -1,0 +1,29 @@
+.credit-card {
+    &__header-title {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    &__header-icon {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    &__content-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        p:nth-of-type(1) {
+            margin-right: auto;
+        }
+    }
+
+    &__content-line {
+        border: 0.5px solid #9e9e9e;
+    }
+}
