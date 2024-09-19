@@ -4,6 +4,8 @@ import { ISaldos } from "./saldos";
 export interface ICliente {
     nome: string;
     idade: number;
-    renda: number;
+    rendaMensal: number;
     nacionalidade: string;
+    saldos: ISaldos;
+    credito: ICredito;
 }
