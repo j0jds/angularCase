@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ICliente } from '../../interfaces/cliente';
 
 @Component({
   selector: 'app-card-body',
@@ -7,16 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CardBodyComponent {
 
-// @Input({ required: true })
-// cardSaldos: string = '';
-
-// @Input({ required: true })
-// cardCredit: string = '';
-
-// @Input({ required: true })
-// cardDebit: string = '';
-
-// @Input({ required: true })
-// cardClient: string = '';
+displayedColumns: string[] = ['name','date','status'];
+@Input({ required: true }) ClientList: ICliente[] = [];
 
 }
