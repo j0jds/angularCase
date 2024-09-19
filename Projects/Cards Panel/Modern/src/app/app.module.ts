@@ -7,6 +7,7 @@ import { CreditCardComponent } from './components/credit-card/credit-card.compon
 import { DebitCardComponent } from './components/debit-card/debit-card.component';
 import { ClientInfosCardComponent } from './components/client-infos-card/client-infos-card.component';
 import { CardItemComponent } from './components/card-item/card-item.component';
+import { CardLineComponent } from './components/card-line/card-line.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardItemComponent } from './components/card-item/card-item.component';
     CreditCardComponent,
     DebitCardComponent,
     ClientInfosCardComponent,
-    CardItemComponent
+    CardItemComponent,
+    CardLineComponent
   ],
   imports: [
     BrowserModule
