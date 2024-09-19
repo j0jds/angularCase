@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { ICliente } from '../../interfaces/cliente';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-card-body',
@@ -8,7 +7,5 @@ import { ICliente } from '../../interfaces/cliente';
 })
 export class CardBodyComponent {
 
-displayedColumns: string[] = ['name','date','status'];
-@Input({ required: true }) ClientList: ICliente[] = [];
 
 }

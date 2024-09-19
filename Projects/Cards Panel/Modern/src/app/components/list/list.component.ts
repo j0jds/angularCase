@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ICliente } from '../../interfaces/cliente';
+
 
 @Component({
   selector: 'app-list',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.scss'
 })
 export class ListComponent {
+
+  @Input({ required: true }) ClientList: ICliente[] = [];
+
 
 }
