@@ -10,5 +10,4 @@ export class CardTitleComponent {
   @Input({ required: true}) title: string = '';   
   @Input({ required: true}) icon: string = '';   
 
-
 }
