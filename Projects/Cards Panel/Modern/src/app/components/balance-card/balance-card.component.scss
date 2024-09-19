@@ -1,36 +1,17 @@
 .balance-card {
-    &__header {
-        display: flex;
-        align-items: center;
+  &__header {
+    display: flex;
+    align-items: center;
 
-        p {
-            font-size: 20px;
-        }
+    p {
+      margin-left: auto;
     }
+  }
 
-    &__header-title {
-        display: flex;
-        align-items: center;
-        margin-right: auto;
-
-        h1 {
-            font-size: 20px;
-        }
-    }
-
-    &__header-icon {
-        width: 40px;
-        margin-right: 10px;
-    }
-
-    &__content-line {
-        border: 0.5px solid #9e9e9e;
-    }
-
-    &__content-summary {
-        margin-top: 30px;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.1);
-        padding: 0px 12px;
-    }
+  &__content-summary {
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 12px;
+  }
 }
