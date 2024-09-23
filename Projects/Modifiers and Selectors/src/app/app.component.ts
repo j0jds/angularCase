@@ -4,6 +4,7 @@ import { CardTextTitleDirective } from './components/cards/directives/card-text-
 import { CardAvatarSmallDirective } from './components/cards/directives/card-avatar-small.directive';
 import { CardTextSubtitleDirective } from './components/cards/directives/card-text-subtitle.directive';
 import { CardTextDescriptionDirective } from './components/cards/directives/card-text-description.directive';
+import { CardAvatarLargeDirective } from "./components/cards/directives/card-avatar-large.directive";
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,8 @@ import { CardTextDescriptionDirective } from './components/cards/directives/card
     CardAvatarSmallDirective,
     CardTextSubtitleDirective,
     CardTextDescriptionDirective,
-  ],
+    CardAvatarLargeDirective
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
