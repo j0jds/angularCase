@@ -4,4 +4,5 @@ import { Directive } from '@angular/core';
   selector: 'app-card-content',
   host: {'class': 'ca-c-card__content'}
 })
+
 export class CardContentDirective {}
