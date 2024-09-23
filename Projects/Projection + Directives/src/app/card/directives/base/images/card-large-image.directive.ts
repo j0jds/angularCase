@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: 'app-card-large-image',
+  selector: '[appCardLargeImage]',
   host: {'class': 'ca-c-card__large-image'}
 })
 
