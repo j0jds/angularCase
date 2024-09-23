@@ -1,4 +1,4 @@
-import { Directive } from '@angular/core';
+import { Directive, HostBinding, Input } from '@angular/core';
 
 @Directive({
   selector: 'app-card-text-description',
@@ -6,4 +6,7 @@ import { Directive } from '@angular/core';
   host: {'class': 'ca-u-card-text-description'}
 })
 
-export class CardTextDescriptionDirective {}
+export class CardTextDescriptionDirective {
+  @Input()
+  @HostBinding('style.color') color: string = '';
+}
