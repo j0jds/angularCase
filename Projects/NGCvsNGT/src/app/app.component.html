@@ -1,14 +1,17 @@
-<div>
-    Div:
-    <app-meu></app-meu>
-</div>
-
-<ng-container>
-    Container:
-    <app-meu></app-meu>
-</ng-container>
-
-<ng-template>
-    Template:
-    <app-meu></app-meu>
+<ng-template #headerTemplate>
+    <p>Sou o Header</p>
 </ng-template>
+
+<ng-template #contentTemplate>
+    <p>Sou o Content</p>
+</ng-template>
+
+<ng-template #footerTemplate>
+    <p>Sou o Footer</p>
+</ng-template>
+
+<app-card 
+[header]="headerTemplate"
+[content]="contentTemplate"
+[footer]="footerTemplate"
+></app-card>

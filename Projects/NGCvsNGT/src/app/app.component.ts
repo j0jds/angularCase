@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './ng-template-outlet/ex4.html',
+  templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 

@@ -1,0 +1,8 @@
+<ng-container *ngTemplateOutlet="header"></ng-container>
+<ng-container *ngTemplateOutlet="content"></ng-container>
+<ng-container *ngTemplateOutlet="footer ? footer : footerDefault"></ng-container>
+
+<ng-template #footerDefault>
+    Sou o Footer Default
+</ng-template>
+
