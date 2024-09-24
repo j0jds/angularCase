@@ -10,7 +10,11 @@
         display: block;
 
         &[color="blue"] {
-            background-color: #32e9da;
+            background-color: cyan;
+        }
+
+        &[color="green"] {
+            background-color: green;
         }
     }
 

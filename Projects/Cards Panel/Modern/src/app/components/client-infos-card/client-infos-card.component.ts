@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-client-infos-card',
@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./client-infos-card.component.scss']
 })
 
-export class ClientInfosCardComponent { }
+export class ClientInfosCardComponent implements OnInit {
+  
+  headerColor: string = 'blue';
+
+  ngOnInit() {
+    setInterval(() => {
+      this.headerColor = this.headerColor === 'blue' ? 'green' : 'blue';
+    }, 1000);    
+  }
+
+ }
