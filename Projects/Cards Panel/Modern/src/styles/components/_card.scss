@@ -9,7 +9,7 @@
         background-color: rgb(233, 129, 50);
         display: block;
 
-        &--bg-blue {
+        &[color="blue"] {
             background-color: #32e9da;
         }
     }

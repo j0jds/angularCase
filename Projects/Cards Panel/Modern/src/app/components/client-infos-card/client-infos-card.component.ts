@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./client-infos-card.component.scss']
 })
 
-export class ClientInfosCardComponent {
-  isBlue = true;
-}
+export class ClientInfosCardComponent { }
