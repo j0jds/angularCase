@@ -12,6 +12,7 @@ import { CardHeaderDirective } from './components/card/directives/base/card-head
 import { BalanceCardComponent } from './components/balance-card/balance-card.component';
 import { CardContentDirective } from './components/card/directives/base/card-content.directive';
 import { CardTitleTextDirective } from './components/card/directives/texts/card-title-text.directive';
+import { CardMediumIconDirective } from './components/card/directives/icons/card-medium-icon.directive';
 import { ClientInfosCardComponent } from './components/client-infos-card/client-infos-card.component';
 import { DescriptionTextDirective } from './components/card/directives/texts/description-text.directive';
 
@@ -28,6 +29,7 @@ import { DescriptionTextDirective } from './components/card/directives/texts/des
     BalanceCardComponent,
     CardContentDirective,
     CardTitleTextDirective,
+    CardMediumIconDirective,
     ClientInfosCardComponent,
     DescriptionTextDirective,
   ],
