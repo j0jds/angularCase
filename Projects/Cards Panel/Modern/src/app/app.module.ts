@@ -9,8 +9,8 @@ import { CardTitleComponent } from './components/card-title/card-title.component
 import { DebitCardComponent } from './components/debit-card/debit-card.component';
 import { CreditCardComponent } from './components/credit-card/credit-card.component';
 import { CardHeaderDirective } from './components/card/directives/base/card-header.directive';
-import { BalanceCardComponent } from './components/balance-card/balance-card.component';
 import { CardContentDirective } from './components/card/directives/base/card-content.directive';
+import { BalanceCardComponent } from './components/balance-card/balance-card.component';
 import { CardTitleTextDirective } from './components/card/directives/texts/card-title-text.directive';
 import { CardMediumIconDirective } from './components/card/directives/icons/card-medium-icon.directive';
 import { ClientInfosCardComponent } from './components/client-infos-card/client-infos-card.component';
@@ -26,8 +26,8 @@ import { DescriptionTextDirective } from './components/card/directives/texts/des
     DebitCardComponent,
     CreditCardComponent,
     CardHeaderDirective,
-    BalanceCardComponent,
     CardContentDirective,
+    BalanceCardComponent,
     CardTitleTextDirective,
     CardMediumIconDirective,
     ClientInfosCardComponent,
