@@ -18,6 +18,16 @@
         }
     }
 
+    &__title-text {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    &__description-text {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
     &__content {
         padding: 15px;
         overflow: hidden;

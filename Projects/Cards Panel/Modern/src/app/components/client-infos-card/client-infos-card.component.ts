@@ -13,7 +13,7 @@ export class ClientInfosCardComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.headerColor = this.headerColor === 'blue' ? 'green' : 'blue';
-    }, 1000);    
+    }, 5000);    
   }
 
  }
