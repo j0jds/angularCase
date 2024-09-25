@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LowercaseComponent } from './lowercase/lowercase.component';
 import { TitlecaseComponent } from './titlecase/titlecase.component';
 import { UppercaseComponent } from './uppercase/uppercase.component';
+import { DateComponent } from './date/date.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UppercaseComponent } from './uppercase/uppercase.component';
     SliceComponent,
     LowercaseComponent,
     TitlecaseComponent,
-    UppercaseComponent
+    UppercaseComponent,
+    DateComponent,
   ],
   imports: [
     BrowserModule,
