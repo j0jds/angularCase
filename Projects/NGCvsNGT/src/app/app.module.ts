@@ -2,19 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { MeuComponent } from './meu/meu.component';
 import { CardComponent } from './card/card.component';
+import { MeuCompComponent } from './meu-comp/meu-comp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeuComponent,
-    CardComponent
+    CardComponent,
+    MeuCompComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
