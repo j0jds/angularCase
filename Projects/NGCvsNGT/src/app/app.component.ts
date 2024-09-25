@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  condition: boolean = true;
- }
+
+  condition: boolean = false;
+
+}
