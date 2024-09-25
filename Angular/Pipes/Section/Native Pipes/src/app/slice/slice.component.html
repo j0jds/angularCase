@@ -1,1 +1,8 @@
-<p>slice works!</p>
+<h1>{{ 'Olá Mundo'| slice : 0 : 3}}</h1>
+
+<h1>{{ 'Olá Mundo'| slice : 4 }}</h1>
+
+<h1>{{ [1, 2, 3, 4, 5 ] | slice : 0 : 3}}</h1>
+
+<h1 *ngFor="let n of [1, 2, 3, 4, 5] | slice : 0 : 2">{{ n }}</h1>
+
