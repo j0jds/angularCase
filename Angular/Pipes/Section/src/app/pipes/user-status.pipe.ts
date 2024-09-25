@@ -17,7 +17,7 @@ export class UserStatusPipe implements PipeTransform {
     //   return 'Inválido';
     // }
 
-    const userStatusDescription: {[key: number]: string} = {
+    const userStatusDescription: {[key: number]: string } = {
       [UserStatusEnum.ATIVO]: 'Ativo',
       [UserStatusEnum.INATIVO]: 'Inativo',
     };
