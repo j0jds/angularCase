@@ -11,7 +11,9 @@ export class TruncatePipe implements PipeTransform {
       return '';
     }
 
-    if(value.length <= maxLength) {
+    const VALUE_LESS_THAN_MAX_LENGTH = value.length <= maxLength;
+
+    if(VALUE_LESS_THAN_MAX_LENGTH) {
       return value;
     }
   
