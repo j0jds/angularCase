@@ -3,18 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Section": {
+    "Native-Pipes": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
+          "skipTests": true,
           "standalone": false
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
         },
         "@schematics/angular:directive": {
+          "skipTests": true,
           "standalone": false
         },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
         "@schematics/angular:pipe": {
+          "skipTests": true,
           "standalone": false
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         }
       },
       "root": "",
@@ -24,7 +42,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/section",
+            "outputPath": "dist/native-pipes",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +89,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Section:build:production"
+              "buildTarget": "Native-Pipes:build:production"
             },
             "development": {
-              "buildTarget": "Section:build:development"
+              "buildTarget": "Native-Pipes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,8 +123,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
