@@ -1,36 +1,30 @@
 <div class="container">
     <div class="header">
-        <h1>Formato: <a href="https://pt.wikipedia.org/wiki/ISO_8601" target="_blank">ISO8601</a></h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore autem ea architecto, earum incidunt tenetur laborum dolorem atque dolor accusantium quisquam est, numquam officiis quod natus harum aliquam officia iste?</p>
     </div>
    
     <div class="body">
-        <h2>Data convertida para região: </h2>
+
+        <h2>Moedas: </h2>
       
-        <p class="date">{{ minhaData | date : "full" }}</p>
-
-        <div class="break"></div>
-      
-        <h2>Data UTC-0: </h2>
-      
-        <p class="date">{{ minhaData | date : "full" : "+0000" }}</p>
+        <p class="date">{{ 1200.99 | currency : 'BRL' : 'code' }}</p>
+        <p class="date">{{ 1200.99 | currency : 'BRL' : 'symbol' }}</p>
+        <p class="date">{{ 1200.99 | currency : 'BRL' : 'symbol-narrow' }}</p>
+        <p class="date">{{ 1200.99 | currency : 'BRL' : 'teste' }}</p>
 
         <div class="break"></div>
 
-        <h2>Formato Timestamp: </h2>
-
-        <p class="date">Timestamp para região: {{ 1727384400000 | date : "full" }}</p>
-
-        <p class="date">Timestamp para região: {{ 1727384400000 | date : "full" : "+0000" }}</p>
+        <p class="date">{{ 1200.99 | currency : 'CAD' : 'symbol' }}</p>
+        <p class="date">{{ 1200.99 | currency : 'CAD' : 'symbol-narrow' }}</p>
 
         <div class="break"></div>
 
-        <h2>Formato Date OBJ: </h2>
-
-        <p class="date">Data convertida para região: {{ minhaDataOBJ | date : "full" }}</p>
+        <p class="date">{{ 1200.99 | currency : 'BRL' : true }}</p>
+        <p class="date">{{ 1200.99 | currency : 'BRL' : false }}
 
         <div class="break"></div>
 
-        <p class="date">Data UTC-0: {{ minhaDataOBJ | date : 'full' : '+0000' }}</p>
-        
+        <p class="date">{{ 1200.994 | currency : 'BRL' : true : '1.2-2' }}
+
     </div>
 </div>
