@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class DateComponent implements OnInit {
   
-  minhaData: string = '2023-10-21T21:00:00.000Z';
+  minhaData: string = '2024-09-26T21:00:00.000Z';
+  minhaDataOBJ: Date = new Date('2024-09-26T21:00:00.000Z');
 
   ngOnInit() {
-      console.log('', new Date(this.minhaData))
-  }
+      console.log('Data convertida para região: ', new Date(this.minhaData));
+      console.log('Data UTC-0: ', new Date(this.minhaData).toUTCString());
+      console.log('Timestamp: ', new Date(this.minhaData).getTime());
+      console.log(this.minhaDataOBJ);
+    }
 
  }

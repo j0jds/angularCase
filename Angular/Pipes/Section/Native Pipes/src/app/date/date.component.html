@@ -1,3 +1,36 @@
-<h1>Formato ISO8601</h1>
+<div class="container">
+    <div class="header">
+        <h1>Formato: <a href="https://pt.wikipedia.org/wiki/ISO_8601" target="_blank">ISO8601</a></h1>
+    </div>
+   
+    <div class="body">
+        <h2>Data convertida para região: </h2>
+      
+        <p class="date">{{ minhaData | date : "full" }}</p>
 
-<b>{{ minhaData | date : 'full'}}</b>
+        <div class="break"></div>
+      
+        <h2>Data UTC-0: </h2>
+      
+        <p class="date">{{ minhaData | date : "full" : "+0000" }}</p>
+
+        <div class="break"></div>
+
+        <h2>Formato Timestamp: </h2>
+
+        <p class="date">Timestamp para região: {{ 1727384400000 | date : "full" }}</p>
+
+        <p class="date">Timestamp para região: {{ 1727384400000 | date : "full" : "+0000" }}</p>
+
+        <div class="break"></div>
+
+        <h2>Formato Date OBJ: </h2>
+
+        <p class="date">Data convertida para região: {{ minhaDataOBJ | date : "full" }}</p>
+
+        <div class="break"></div>
+
+        <p class="date">Data UTC-0: {{ minhaDataOBJ | date : 'full' : '+0000' }}</p>
+        
+    </div>
+</div>
