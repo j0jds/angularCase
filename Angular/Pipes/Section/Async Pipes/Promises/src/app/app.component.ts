@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { UsersService } from './services/users.service';
+import { IUser } from './interfaces/user';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+  userPromise!: Promise<IUser> | undefined;
+  
+  constructor(
+    private readonly _usersService: UsersService
+  ) {} 
 
+  ngOnInit() {
+    this.userPromise = this._usersService.getUser();
+  }
 }
