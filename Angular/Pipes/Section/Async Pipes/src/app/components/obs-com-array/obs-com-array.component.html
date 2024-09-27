@@ -1,1 +1,9 @@
-<p>obs-com-array works!</p>
+<h1>Async Pipe com Array</h1>
+
+<h3>Subscribe com Async Pipe: </h3>
+
+<ng-container *ngFor="let user of (users$ | async)">
+    <p>Nome: {{ user.name }}</p>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+</ng-container>
