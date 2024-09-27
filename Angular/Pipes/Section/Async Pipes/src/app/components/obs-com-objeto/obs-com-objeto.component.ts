@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { UserService } from '../../services/user.service';
+import { IUserResponse } from '../../interfaces/user-response';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-obs-com-objeto',
@@ -6,6 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './obs-com-objeto.component.scss'
 })
 
-export class ObsComObjetoComponent {
+export class ObsComObjetoComponent implements OnInit {
 
+  user: IUserResponse = {} as IUserResponse; 
+
+  constructor(private readonly _userService: UserService) {}
+
+  ngOnInit() {
+    this._userService.getUserById(1).subscribe((UserResponse) =>  this.user = UserResponse);
+  }
 }
