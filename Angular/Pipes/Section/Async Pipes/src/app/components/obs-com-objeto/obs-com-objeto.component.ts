@@ -1,3 +1,4 @@
+import { Subscription } from 'rxjs'
 import { UserService } from '../../services/user.service';
 import { IUserResponse } from '../../interfaces/user-response';
 import { Component, OnInit } from '@angular/core';
@@ -11,10 +12,16 @@ import { Component, OnInit } from '@angular/core';
 export class ObsComObjetoComponent implements OnInit {
 
   user: IUserResponse = {} as IUserResponse; 
+  userSubs: Subscription | undefined; 
 
   constructor(private readonly _userService: UserService) {}
 
   ngOnInit() {
-    this._userService.getUserById(1).subscribe((UserResponse) =>  this.user = UserResponse);
+    this.userSubs = this._userService.getUserById(1).subscribe((UserResponse) =>  this.user = UserResponse);
   }
+
+  ngOnDestroy() {
+    this.userSubs && this.userSubs.unsubscribe();
+  }
+
 }
