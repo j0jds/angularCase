@@ -26,4 +26,8 @@ export class ObsComObjetoComponent implements OnInit {
     this.userSubs && this.userSubs.unsubscribe();
   }
 
+  onBtnClick (userId: number) {
+    this.user$ = this._userService.getUserById(userId)
+  }
+
 }
