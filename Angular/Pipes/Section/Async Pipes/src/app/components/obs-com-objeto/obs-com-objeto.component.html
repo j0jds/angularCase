@@ -5,3 +5,11 @@
 <p>Nome: {{ user.name }}</p>
 <p>Username: {{ user.username }}</p>
 <p>Email: {{ user.email }}</p>
+
+<h2>Subscribe Async Pipe</h2>
+
+<div *ngIf="(user$ | async) as meuUser">
+    <p>Nome: {{ meuUser.name }}</p>
+    <p>Username: {{ meuUser.username }}</p>
+    <p>Email: {{ meuUser.email }}</p>
+</div>
