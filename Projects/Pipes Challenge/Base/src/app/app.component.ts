@@ -10,6 +10,7 @@ import { take } from 'rxjs';
 })
 
 export class AppComponent implements OnInit {
+  searchTerm: string = '';
   operationsList: OperationsListResponse = [];
 
   constructor(private readonly _operationsService: OperationService) {}
