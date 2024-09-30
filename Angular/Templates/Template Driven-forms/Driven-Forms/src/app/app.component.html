@@ -1,7 +1,16 @@
 <!-- <input [ngModel]="nome" (ngModelChange)="onChange($event)" /> -->
 
-<input [(ngModel)]="nome"/>
+<!-- <input [(ngModel)]="nome"/>
 
 <br>
 
-<button (click)="show ()">Mostrar</button>
+<button (click)="show ()">Mostrar</button> -->
+
+<input 
+    ngModel
+    #meuInputFormControl="ngModel"
+ />
+
+ <p>Válido: {{ meuInputFormControl.valid }}</p>
+ <p>Tocado: {{ meuInputFormControl.touched }}</p>
+ <p>Sujo: {{ meuInputFormControl.dirty }}</p>
