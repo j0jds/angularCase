@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { StatusPipe } from './pipes/status.pipe';
+import { StatusIconPipe } from './pipes/status-icon.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StatusPipe
+    StatusPipe,
+    StatusIconPipe
   ],
   imports: [
     BrowserModule

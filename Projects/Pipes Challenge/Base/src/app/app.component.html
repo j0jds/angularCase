@@ -20,7 +20,7 @@
                   <td class="operations__table-cell">
                       <p class="operations__status">
                           {{ operation.customerStatus | status }}
-                          <img src="assets/icons/active-icon.png" class="operations__icon" width="20" height="20" />
+                          <img [src]="operation.customerStatus | statusIcon" class="operations__icon" width="20" height="20" />
                       </p>
                   </td>
                   <td class="operations__table-cell">31/10/2023</td>
