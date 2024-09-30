@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 
-export class AppComponent { }
+export class AppComponent { 
+  nome: string = 'Joel';
+
+  onChange(text: string) {
+    console.log(text);
+
+  }
+
+  show() {
+    console.log(this.nome)
+  }
+
+}
