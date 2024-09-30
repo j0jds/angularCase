@@ -23,8 +23,8 @@
                           <img [src]="operation.customerStatus | statusIcon" class="operations__icon" width="20" height="20" />
                       </p>
                   </td>
-                  <td class="operations__table-cell">31/10/2023</td>
-                  <td class="operations__table-cell">14:30 PM</td>
+                  <td class="operations__table-cell">{{ operation.operationDate | date : 'shortDate' }}</td>
+                  <td class="operations__table-cell">{{ operation.operationDate | date : 'shortTime'}}</td>
                   <td class="operations__table-cell">R$ 500,00</td>
                   <td class="operations__table-cell">40%</td>
               </tr>
