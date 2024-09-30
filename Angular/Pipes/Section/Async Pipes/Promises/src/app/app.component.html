@@ -5,6 +5,13 @@
     <p>Email: {{ user.email }}</p>
 </div>
 
+<div *ngIf="(userByIdPromise | async) as userById">
+    <p>ID: {{ userById.id }}</p>
+    <p>Nome: {{ userById.name }}</p>
+    <p>Username: {{ userById.username }}</p>
+    <p>Email: {{ userById.email }}</p>
+</div>
+
 <ng-template #loadingTemplate>
     <h1>Carregando...</h1>
 </ng-template>
