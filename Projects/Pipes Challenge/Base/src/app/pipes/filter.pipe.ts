@@ -5,7 +5,12 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 
 export class FilterPipe implements PipeTransform {
-    transform(list: any[], searchProp: string, searchValue: string): any[] {
+    transform(list: any[] | null, searchProp: string, searchValue: string): any[] {
+        
+        if(!list) {
+            return [];
+        }
+        
         if (list.length === 0 || !searchValue ) {
             return list;
         } 

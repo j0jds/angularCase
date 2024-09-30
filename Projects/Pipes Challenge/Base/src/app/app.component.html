@@ -15,7 +15,7 @@
               </tr>
           </thead>
           <tbody>
-              <tr *ngFor="let operation of operationsList | filter : 'customerName' : searchTerm">
+              <tr *ngFor="let operation of operationsList$ | async | filter : 'customerName' : searchTerm">
                   <td class="operations__table-cell">{{ operation.customerName }}</td>
                   <td class="operations__table-cell">
                       <p class="operations__status">
