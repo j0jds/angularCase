@@ -15,11 +15,11 @@
               </tr>
           </thead>
           <tbody>
-              <tr>
-                  <td class="operations__table-cell">João</td>
+              <tr *ngFor="let operation of operationsList">
+                  <td class="operations__table-cell">{{ operation.customerName }}</td>
                   <td class="operations__table-cell">
                       <p class="operations__status">
-                          Ativo
+                          {{ operation.customerStatus | status }}
                           <img src="assets/icons/active-icon.png" class="operations__icon" width="20" height="20" />
                       </p>
                   </td>
@@ -27,45 +27,6 @@
                   <td class="operations__table-cell">14:30 PM</td>
                   <td class="operations__table-cell">R$ 500,00</td>
                   <td class="operations__table-cell">40%</td>
-              </tr>
-              <tr>
-                  <td class="operations__table-cell">Maria</td>
-                  <td class="operations__table-cell">
-                      <p class="operations__status">
-                          Inativo
-                          <img src="assets/icons/inactive-icon.png" class="operations__icon" width="20" height="20" />
-                      </p>
-                  </td>
-                  <td class="operations__table-cell">30/10/2023</td>
-                  <td class="operations__table-cell">10:15 AM</td>
-                  <td class="operations__table-cell">R$ 750,99</td>
-                  <td class="operations__table-cell">6,75%</td>
-              </tr>
-              <tr>
-                  <td class="operations__table-cell">Pedro</td>
-                  <td class="operations__table-cell">
-                      <p class="operations__status">
-                          Ativo
-                          <img src="assets/icons/active-icon.png" class="operations__icon" width="20" height="20" />
-                      </p>
-                  </td>
-                  <td class="operations__table-cell">28/10/2023</td>
-                  <td class="operations__table-cell">22:15 PM</td>
-                  <td class="operations__table-cell">R$ 3.000.000,00</td>
-                  <td class="operations__table-cell">100%</td>
-              </tr>
-              <tr>
-                  <td class="operations__table-cell">Laura</td>
-                  <td class="operations__table-cell">
-                      <p class="operations__status">
-                          Inativo
-                          <img src="assets/icons/inactive-icon.png" class="operations__icon" width="20" height="20" />
-                      </p>
-                  </td>
-                  <td class="operations__table-cell">25/10/2023</td>
-                  <td class="operations__table-cell">00:25 AM</td>
-                  <td class="operations__table-cell">R$ 150.300,35</td>
-                  <td class="operations__table-cell">10,32%</td>
               </tr>
           </tbody>
       </table>
