@@ -26,7 +26,7 @@
                   <td class="operations__table-cell">{{ operation.operationDate | date : 'shortDate' }}</td>
                   <td class="operations__table-cell">{{ operation.operationDate | date : 'shortTime'}}</td>
                   <td class="operations__table-cell">{{ operation.operationValue | currency }}</td>
-                  <td class="operations__table-cell">40%</td>
+                  <td class="operations__table-cell">{{ operation.operationRisck | percent : '1.0-2'}}</td>
               </tr>
           </tbody>
       </table>
