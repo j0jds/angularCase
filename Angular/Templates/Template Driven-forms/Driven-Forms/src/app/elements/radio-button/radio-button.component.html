@@ -1,31 +1,39 @@
-<input
-  type="radio"
-  id="html"
-  name="group1"
-  value="html"
-  [ngModel]="radioSelection"
-  (ngModelChange)="onChange($event)"
-/>
-<label for="html">HTML</label>
+<form ngForm #f="ngForm">
+  <input
+    type="radio"
+    id="html"
+    name="group1"
+    value="html"
+    [ngModel]="radioSelection"
+    (ngModelChange)="onChange($event)"
+    required
+    />
+  <label for="html">HTML</label>
 
-<input
-  type="radio"
-  id="css"
-  name="group1"
-  value="css"
-  [ngModel]="radioSelection"
-  (ngModelChange)="onChange($event)"
-/>
-<label for="css">CSS</label>
+  <input
+    type="radio"
+    id="css"
+    name="group1"
+    value="css"
+    [ngModel]="radioSelection"
+    (ngModelChange)="onChange($event)"
+    required
+  />
+  <label for="css">CSS</label>
 
-<input
-  type="radio"
-  id="javascript"
-  name="group1"
-  value="javascript"
-  [ngModel]="radioSelection"
-  (ngModelChange)="onChange($event)"
-/>
-<label for="javascript">JavaScript</label>
+  <input
+    type="radio"
+    id="javascript"
+    name="group1"
+    value="javascript"
+    [ngModel]="radioSelection"
+    (ngModelChange)="onChange($event)"
+    required
+  />
+  <label for="javascript">JavaScript</label>
 
-<p>Radio Selecionado: {{ radioSelection }}</p>
+  <p>Radio Selecionado: {{ radioSelection }}</p>
+
+  <!-- <button [disabled]="!radioSelection === undefined || radioSelection === null || radioSelection === ''">Enviar</button> -->
+  <button [disabled]="f.invalid">Enviar</button>
+</form>
