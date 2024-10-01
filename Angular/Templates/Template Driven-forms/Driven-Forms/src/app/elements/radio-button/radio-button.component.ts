@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './radio-button.component.html',
   styleUrl: './radio-button.component.scss'
 })
+
 export class RadioButtonComponent {
+  radioSelection: string = 'html';
+
+  onChange(selection: string) {
+    console.log('onChange', selection);
+  
+    this.radioSelection = selection;
+  }
 
 }
+
