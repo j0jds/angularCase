@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './select.component.scss'
 })
 
-export class SelectComponent {
-
-}
+export class SelectComponent {}
