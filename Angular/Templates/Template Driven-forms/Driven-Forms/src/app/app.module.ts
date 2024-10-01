@@ -8,9 +8,10 @@ import { CheckboxComponent } from './elements/checkbox/checkbox.component';
 import { TextareaComponent } from './elements/textarea/textarea/textarea.component';
 import { InputTextComponent } from './elements/input-text/input-text.component';
 import { RadioButtonComponent } from './elements/radio-button/radio-button.component';
+import { FormComponent } from './elements/form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, TextareaComponent, InputTextComponent, SelectComponent, RadioButtonComponent, CheckboxComponent],
+  declarations: [AppComponent, TextareaComponent, InputTextComponent, SelectComponent, RadioButtonComponent, CheckboxComponent, FormComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
