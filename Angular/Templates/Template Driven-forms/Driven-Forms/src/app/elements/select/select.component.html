@@ -29,12 +29,31 @@
     </select>
 </div> -->
 
-<div>
+<!-- <div>
   <label for="nationalities">Selecione uma nacionalidade: </label>
   <select
     id="nationalities"
     name="nationalities"
     [(ngModel)]="nationalitySelected"
+    #meuSelectFormControl="ngModel"
+    required
+  >
+    <option value="" selected>-</option>
+    <option *ngFor="let nationality of nationalities" [value]="nationality.id">
+      {{ nationality.description }}
+    </option>
+  </select>
+
+  <p>Nacionalidade Selecionada: {{ nationalitySelected }}</p>
+</div> -->
+
+<div>
+  <label for="nationalities">Selecione uma nacionalidade: </label>
+  <select
+    id="nationalities"
+    name="nationalities"
+    [ngModel]="nationalitySelected"
+    (ngModelChange)="onChange($event)"
     #meuSelectFormControl="ngModel"
     required
   >
