@@ -4,6 +4,7 @@
 <br>
 <button (click)="show()">Mostrar</button> -->
 
+Nome:
 <input 
     ngModel
     #meuInput
@@ -11,6 +12,18 @@
     minlength="5"
     required
 />
+
+<div *ngIf="meuInputFormControl.invalid && meuInputFormControl.touched">
+    <div *ngIf="meuInputFormControl.hasError('required')">
+        O campo nome é obrigatório.
+    </div>
+</div>
+
+<div *ngIf="meuInputFormControl.invalid && meuInputFormControl.touched">
+    <div *ngIf="meuInputFormControl.hasError('minlength')">
+        O campo nome deve ter pelo menos 5 caracteres.
+    </div>
+</div>
 
  <p>Válido: {{ meuInputFormControl.valid }}</p>
  <p>Tocado: {{ meuInputFormControl.touched }}</p>
