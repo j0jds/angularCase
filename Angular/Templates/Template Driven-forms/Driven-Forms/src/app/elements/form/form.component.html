@@ -28,21 +28,18 @@ Se não colocarmos nenhuma, a change fica por padrão.
 <form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)" [ngFormOptions]="{ updateOn: 'change' }">
     <input name="nome" type="text" #meuInput="ngModel" [(ngModel)]="inputText" [ngModelOptions]="{ updateOn: 'change' }" required />
 
-    <br/>
-    <br/>
+    <br/><br/>
 
     <textarea name="description" [(ngModel)]="textarea"></textarea>
 
-    <br/>
-    <br/>
+    <br/><br/>
 
     <select name="pais" [(ngModel)]="select">
         <option value="1">Brasil</option>
         <option value="2">Espanha</option>
     </select>
 
-    <br/>
-    <br/>
+    <br/><br/>
 
     <input type="radio" name="groupStatus" id="ativo" value="1" [(ngModel)]="radioButton" />
     <label for="ativo">Ativo</label>
@@ -50,19 +47,16 @@ Se não colocarmos nenhuma, a change fica por padrão.
     <input type="radio" name="groupStatus" id="inativo" value="2" [(ngModel)]="radioButton" />
     <label for="inativo">Inativo</label>
 
-    <br/>
-    <br/>
+    <br/><br/>
 
     <input type="checkbox" name="conditon" id="conditon" [(ngModel)]="checkbox" />
     <label for="conditon">Declaração de Termos</label>
 
-    <br/>
-    <br/>
+    <br/><br/>
 
     <button type="submit">Enviar</button>
     
-    <br/>
-    <br/>
+    <br/><br/>
 
     <button type="reset" (click)="onReset(meuForm)">Limpar</button>
 </form>
