@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 
-import { NgForm } from '@angular/forms';
+import { NgForm, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -8,12 +8,28 @@ import { NgForm } from '@angular/forms';
   styleUrl: './form.component.scss',
 })
 
-export class FormComponent {
+export class FormComponent implements AfterViewInit {
   inputText: string = 'SPLASH';
   textarea: string = 'SPLASH';
   select: string = '1';
   radioButton: string = '1';
   checkbox: boolean = true;
+
+  @ViewChild('meuForm') meuForm!: NgForm;
+  @ViewChild('meuInput') meuInput!: NgModel;
+
+  ngAfterViewInit() {
+    this.meuForm.valueChanges?.subscribe(
+      (value: any) => {
+        console.log('Form change', value);
+      }
+    );
+
+    this.meuInput.valueChanges?.subscribe((value: string) => {
+      console.log('Input Changes')
+    });
+
+  }
 
   onSubmit(form: NgForm) {
     console.log('onSubmit', form.value);

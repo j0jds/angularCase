@@ -26,7 +26,7 @@ Se não colocarmos nenhuma, a change fica por padrão.
 -->
 
 <form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)" [ngFormOptions]="{ updateOn: 'change' }">
-    <input name="nome" type="text" [(ngModel)]="inputText" [ngModelOptions]="{ updateOn: 'change' }" required />
+    <input name="nome" type="text" #meuInput="ngModel" [(ngModel)]="inputText" [ngModelOptions]="{ updateOn: 'change' }" required />
 
     <br/>
     <br/>
