@@ -1,1 +1,17 @@
-<p>form works!</p>
+<form #meuForm="ngForm">
+    <input
+    [ngModel]="'teste'"
+    name="nome" 
+    required
+    />
+
+    <input
+    [ngModel]="'teste'"
+    name="idade" 
+    required
+    />
+
+    <p>Válido: {{ meuForm.valid }}</p>
+    <p>Tocado: {{ meuForm.touched }}</p>
+    <p>Sujo: {{ meuForm.dirty }}</p>
+</form>

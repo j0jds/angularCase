@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './form.component.scss'
 })
 
-export class FormComponent {
+export class FormComponent implements AfterViewInit {
+  @ViewChild('meuForm') form!: NgForm;
+
+  ngAfterViewInit() {
+    console.log(this.form);
+  }
 
 }
