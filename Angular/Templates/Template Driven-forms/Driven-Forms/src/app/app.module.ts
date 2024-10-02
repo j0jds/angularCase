@@ -6,6 +6,7 @@ import { FormComponent } from './elements/form/form.component';
 import { SelectComponent } from './elements/select/select.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CheckboxComponent } from './elements/checkbox/checkbox.component';
+import { FormUserComponent } from './elements/form-user/form-user.component';
 import { MainFormComponent } from './elements/main-form/main-form.component';
 import { TextareaComponent } from './elements/textarea/textarea.component';
 import { InputTextComponent } from './elements/input-text/input-text.component';
@@ -18,6 +19,7 @@ import { NgModelGroupComponent } from './elements/ng-model-group/ng-model-group.
     FormComponent,
     SelectComponent,
     CheckboxComponent,
+    FormUserComponent,
     MainFormComponent,
     TextareaComponent,
     InputTextComponent,
