@@ -1,17 +1,51 @@
-<form #meuForm="ngForm">
-    <input
-    [ngModel]="'teste'"
-    name="nome" 
-    required
-    />
+<!-- <form #meuForm="ngForm">
+  <input [ngModel]="'teste'" name="nome" required />
 
-    <input
-    [ngModel]="'teste'"
-    name="idade" 
-    required
-    />
+  <input [ngModel]="'teste'" name="idade" required />
 
-    <p>Válido: {{ meuForm.valid }}</p>
-    <p>Tocado: {{ meuForm.touched }}</p>
-    <p>Sujo: {{ meuForm.dirty }}</p>
+  <p>Válido: {{ meuForm.valid }}</p>
+  <p>Tocado: {{ meuForm.touched }}</p>
+  <p>Sujo: {{ meuForm.dirty }}</p>
+</form> -->
+
+<form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
+    <input name="nome" type="text" [(ngModel)]="inputText" />
+
+    <br/>
+    <br/>
+
+    <textarea name="description" [(ngModel)]="textarea"></textarea>
+
+    <br/>
+    <br/>
+
+    <select name="pais" [(ngModel)]="select">
+        <option value="1">Brasil</option>
+        <option value="2">Espanha</option>
+    </select>
+
+    <br/>
+    <br/>
+
+    <input type="radio" name="groupStatus" id="ativo" value="1" [(ngModel)]="radioButton" />
+    <label for="ativo">Ativo</label>
+
+    <input type="radio" name="groupStatus" id="inativo" value="2" [(ngModel)]="radioButton" />
+    <label for="inativo">Inativo</label>
+
+    <br/>
+    <br/>
+
+    <input type="checkbox" name="conditon" id="conditon" [(ngModel)]="checkbox" />
+    <label for="conditon">Declaração de Termos</label>
+
+    <br/>
+    <br/>
+
+    <button type="submit">Enviar</button>
+    
+    <br/>
+    <br/>
+
+    <button type="reset" (click)="onReset(meuForm)">Limpar</button>
 </form>
