@@ -6,6 +6,7 @@ import { FormComponent } from './elements/form/form.component';
 import { SelectComponent } from './elements/select/select.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CheckboxComponent } from './elements/checkbox/checkbox.component';
+import { MainFormComponent } from './elements/main-form/main-form.component';
 import { TextareaComponent } from './elements/textarea/textarea.component';
 import { InputTextComponent } from './elements/input-text/input-text.component';
 import { RadioButtonComponent } from './elements/radio-button/radio-button.component';
@@ -17,6 +18,7 @@ import { NgModelGroupComponent } from './elements/ng-model-group/ng-model-group.
     FormComponent,
     SelectComponent,
     CheckboxComponent,
+    MainFormComponent,
     TextareaComponent,
     InputTextComponent,
     RadioButtonComponent,
