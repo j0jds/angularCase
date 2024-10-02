@@ -8,8 +8,25 @@
   <p>Sujo: {{ meuForm.dirty }}</p>
 </form> -->
 
-<form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
-    <input name="nome" type="text" [(ngModel)]="inputText" />
+<!-- 
+
+ngFormOptions: 'change' | 'blur' | 'submit'
+Cada um dos FormOptions vai fazer com que o Angular reaja ao formulário de uma maneira diferente.
+O change vai escutar mudanças em tempo real, enquanto o blur vai escutar depois que se clica fora do campo
+de formulário. O submit vai escutar depois de se clicar no botão relacionado ao submit (enviar aqui).
+
+Exemplo de uso para cada uma:
+
+Change: verificação de username.
+Blur: verificação de email.
+Submit: verificação de completa de dados no formulário.
+
+Se não colocarmos nenhuma, a change fica por padrão.
+
+-->
+
+<form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)" [ngFormOptions]="{ updateOn: 'blur' }">
+    <input name="nome" type="text" [(ngModel)]="inputText" required />
 
     <br/>
     <br/>
