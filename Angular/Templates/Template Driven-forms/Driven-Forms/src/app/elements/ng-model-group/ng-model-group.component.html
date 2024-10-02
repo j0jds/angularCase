@@ -5,12 +5,6 @@
             <h3>Dados do Usuário:</h3>
             <input name="nome" ngModel placeholder="Nome" required />
             <input name="idade" ngModel placeholder="Idade" required />
-            <div class="estado">
-                <b>Estado do Usuário:</b>
-                <p>Válido: {{ grupoUsuario.valid }}</p>
-                <p>Tocado: {{ grupoUsuario.touched }}</p>
-                <p>Sujo: {{ grupoUsuario.dirty }}</p>
-            </div>
         </ng-container>
     
         <ng-container ngModelGroup="'grupoProfissao'">
