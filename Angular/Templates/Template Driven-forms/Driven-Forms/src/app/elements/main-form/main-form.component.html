@@ -1,1 +1,7 @@
-<p>main-form works!</p>
+<form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
+
+    <app-form-user></app-form-user>
+    <app-form-profession></app-form-profession>
+    
+    <button type="submit" [disabled]="meuForm.invalid">Enviar</button>
+</form>
