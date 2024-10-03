@@ -6,8 +6,8 @@
     </select>
     <br>
     <input type="text" name="quantidade" id="quantidade" ngModel placeholder="Quantidade de Pessoas">
-    <div>
-        <p>O departamento de Tecnologia deve ter no máximo 10 pessoas.</p>
-        <p>O departamento de Recursos Humanos deve ter no máximo 20 pessoas.</p>
+    <div *ngIf="meuForm && meuForm.invalid && meuForm.dirty">
+        <p *ngIf="meuForm.hasError('invalidITQuantity')">O departamento de Tecnologia deve ter no máximo 10 pessoas.</p>
+        <p *ngIf="meuForm.hasError('invalidHRQuantity')">O departamento de Recursos Humanos deve ter no máximo 20 pessoas.</p>
     </div>
 </form>
