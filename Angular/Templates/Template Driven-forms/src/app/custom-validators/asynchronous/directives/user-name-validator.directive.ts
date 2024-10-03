@@ -1,11 +1,23 @@
-import { Directive } from '@angular/core';
+import { Directive, forwardRef } from '@angular/core';
+import { AbstractControl, AsyncValidator, NG_ASYNC_VALIDATORS, ValidationErrors } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { UsersService } from '../service/users.service';
 
 @Directive({
-  selector: '[appUserNameValidator]'
+  selector: '[appUserNameValidator]',
+  providers: [
+    {
+      provide: NG_ASYNC_VALIDATORS,
+      useExisting: forwardRef(() => UserNameValidatorDirective),
+      multi: true,
+    },
+  ],
 })
-
-export class UserNameValidatorDirective {
-
-  constructor() { }
-
+export class UserNameValidatorDirective implements AsyncValidator {
+  constructor(private readonly _usersService: UsersService) {}
+  validate(
+    control: AbstractControl<any, any>
+  ): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> {
+    return this._usersService.getUsers();
+  }
 }
