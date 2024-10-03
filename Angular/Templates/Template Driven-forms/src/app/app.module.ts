@@ -15,6 +15,7 @@ import { NgModelGroupComponent } from './elements/ng-model-group/ng-model-group.
 import { FormProfessionComponent } from './form-with-children/form-profession/form-profession.component';
 import { CustomValidatorFormEx1Component } from './custom-validators/synchronous/ex1/custom-validator-form-ex1/custom-validator-form-ex1.component';
 import { InvalidTextValidatorDirective } from './custom-validators/synchronous/ex1/directives/invalid-text-validator.directive';
+import { CustomValidatorFormEx2Component } from './custom-validators/synchronous/ex2/custom-validator-form-ex2/custom-validator-form-ex2.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { InvalidTextValidatorDirective } from './custom-validators/synchronous/e
     FormProfessionComponent,
     CustomValidatorFormEx1Component,
     InvalidTextValidatorDirective,
+    CustomValidatorFormEx2Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
