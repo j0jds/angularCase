@@ -1,1 +1,10 @@
-<p>custom-validator-form-ex1 works!</p>
+<form #meuForm="ngForm">
+    <input 
+        type="text"
+        name="nome"
+        ngModel
+        #nomeControl="ngModel"
+        placeholder="Digite o nome"
+        required
+    />
+</form>
