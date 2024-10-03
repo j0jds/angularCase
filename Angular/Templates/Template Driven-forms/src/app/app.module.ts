@@ -14,6 +14,7 @@ import { RadioButtonComponent } from './elements/radio-button/radio-button.compo
 import { NgModelGroupComponent } from './elements/ng-model-group/ng-model-group.component';
 import { FormProfessionComponent } from './form-with-children/form-profession/form-profession.component';
 import { CustomValidatorFormEx1Component } from './custom-validators/synchronous/ex1/custom-validator-form-ex1/custom-validator-form-ex1.component';
+import { InvalidTextValidatorDirective } from './custom-validators/synchronous/ex1/directives/invalid-text-validator.directive';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CustomValidatorFormEx1Component } from './custom-validators/synchronous
     NgModelGroupComponent,
     FormProfessionComponent,
     CustomValidatorFormEx1Component,
+    InvalidTextValidatorDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
