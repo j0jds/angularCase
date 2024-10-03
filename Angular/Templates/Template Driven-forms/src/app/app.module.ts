@@ -18,6 +18,7 @@ import { CustomValidatorFormEx1Component } from './custom-validators/synchronous
 import { InvalidTextValidatorDirective } from './custom-validators/synchronous/ex1/directives/invalid-text-validator.directive';
 import { CustomValidatorFormEx2Component } from './custom-validators/synchronous/ex2/custom-validator-form-ex2/custom-validator-form-ex2.component';
 import { DepartmentQuantityValidatorDirective } from './custom-validators/synchronous/ex2/department-quantity-validator.directive';
+import { UserNameValidatorDirective } from './custom-validators/asynchronous/directives/user-name-validator.directive';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { DepartmentQuantityValidatorDirective } from './custom-validators/synchr
     InvalidTextValidatorDirective,
     CustomValidatorFormEx2Component,
     DepartmentQuantityValidatorDirective,
+    UserNameValidatorDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
