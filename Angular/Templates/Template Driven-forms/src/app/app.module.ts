@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormComponent } from './elements/form/form.component';
 import { SelectComponent } from './elements/select/select.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { CheckboxComponent } from './elements/checkbox/checkbox.component';
 import { FormUserComponent } from './form-with-children/form-user/form-user.component';
 import { MainFormComponent } from './form-with-children/main-form/main-form.component';
@@ -36,7 +37,7 @@ import { DepartmentQuantityValidatorDirective } from './custom-validators/synchr
     CustomValidatorFormEx2Component,
     DepartmentQuantityValidatorDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
