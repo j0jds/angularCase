@@ -15,9 +15,10 @@ import { UsersService } from '../service/users.service';
 })
 export class UserNameValidatorDirective implements AsyncValidator {
   constructor(private readonly _usersService: UsersService) {}
-  validate(
-    control: AbstractControl<any, any>
-  ): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> {
-    return this._usersService.getUsers();
+
+  validate(control: AbstractControl<any, any>): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> {
+    return this._usersService.getUsers().pipe(
+      map(() => {})
+    );
   }
 }
