@@ -1,11 +1,11 @@
-<form #meuForm="ngForm">
+<form #meuForm="ngForm" appDepartmentQuantityValidator>
     <label for="departamento">Departamento:</label><br>
     <select name="departamento" id="departamento" ngModel required=>
         <option value="IT">Tecnologia</option>
         <option value="HR">Recursos Humanos</option>
     </select>
     <br>
-    <input type="text" name="quantidade" id="quantidade" ngModel placeholder="Quantidade">
+    <input type="text" name="quantidade" id="quantidade" ngModel placeholder="Quantidade de Pessoas">
     <div>
         <p>O departamento de Tecnologia deve ter no máximo 10 pessoas.</p>
         <p>O departamento de Recursos Humanos deve ter no máximo 20 pessoas.</p>
