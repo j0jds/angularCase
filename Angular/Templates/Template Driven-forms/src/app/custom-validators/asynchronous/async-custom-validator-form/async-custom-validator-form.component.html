@@ -1,1 +1,21 @@
-<p>async-custom-validator-form works!</p>
+<form #meuForm="ngForm">
+    <input
+    type="text"
+    name="nome"
+    ngModel
+    #nomeInputControl="ngModel"
+    placeholder="Digite o Nome" 
+    appUserNameValidator
+    />
+
+    <div>
+        <p>Verificando...</p>
+        <p style="color: green;">Usuário existente!</p>
+        <p style="color: red;">Usuário inexistente!</p>
+    </div>
+
+    <p>Válido: {{ nomeInputControl.valid }}</p>
+    <p>Tocado: {{ nomeInputControl.touched }}</p>
+    <p>Sujo: {{ nomeInputControl.dirty }}</p>
+    <p>Pendente: {{ nomeInputControl.pending }}</p>
+</form>
