@@ -11,8 +11,8 @@
         required
         >
         <mat-hint>O email será usado para login.</mat-hint>
-        <mat-error>O email é <strong>obrigatório</strong>.</mat-error>
-        <mat-error>O email está <strong>fora do padrão</strong>.</mat-error>
+        <mat-error *ngIf="emailControl.hasError('required')">O email é <strong>obrigatório</strong>.</mat-error>
+        <mat-error *ngIf="emailControl.hasError('invalidEmail') && !emailControl.hasError('required')">O email está <strong>fora do padrão</strong>.</mat-error>
     </mat-form-field>
 
     <br><br><br><br>
