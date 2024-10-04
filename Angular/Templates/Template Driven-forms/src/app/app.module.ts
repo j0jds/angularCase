@@ -14,12 +14,13 @@ import { InputTextComponent } from './elements/input-text/input-text.component';
 import { RadioButtonComponent } from './elements/radio-button/radio-button.component';
 import { NgModelGroupComponent } from './elements/ng-model-group/ng-model-group.component';
 import { FormProfessionComponent } from './form-with-children/form-profession/form-profession.component';
-import { CustomValidatorFormEx1Component } from './custom-validators/synchronous/ex1/custom-validator-form-ex1/custom-validator-form-ex1.component';
-import { InvalidTextValidatorDirective } from './custom-validators/synchronous/ex1/directives/invalid-text-validator.directive';
-import { CustomValidatorFormEx2Component } from './custom-validators/synchronous/ex2/custom-validator-form-ex2/custom-validator-form-ex2.component';
-import { DepartmentQuantityValidatorDirective } from './custom-validators/synchronous/ex2/department-quantity-validator.directive';
 import { UserNameValidatorDirective } from './custom-validators/asynchronous/directives/user-name-validator.directive';
+import { InvalidTextValidatorDirective } from './custom-validators/synchronous/ex1/directives/invalid-text-validator.directive';
+import { StandaloneControlFormComponent } from './standalone-control-form/standalone-control-form.component';
+import { CustomValidatorFormEx2Component } from './custom-validators/synchronous/ex2/custom-validator-form-ex2/custom-validator-form-ex2.component';
+import { CustomValidatorFormEx1Component } from './custom-validators/synchronous/ex1/custom-validator-form-ex1/custom-validator-form-ex1.component';
 import { AsyncCustomValidatorFormComponent } from './custom-validators/asynchronous/async-custom-validator-form/async-custom-validator-form.component';
+import { DepartmentQuantityValidatorDirective } from './custom-validators/synchronous/ex2/department-quantity-validator.directive';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,13 @@ import { AsyncCustomValidatorFormComponent } from './custom-validators/asynchron
     RadioButtonComponent,
     NgModelGroupComponent,
     FormProfessionComponent,
-    CustomValidatorFormEx1Component,
-    InvalidTextValidatorDirective,
-    CustomValidatorFormEx2Component,
-    DepartmentQuantityValidatorDirective,
     UserNameValidatorDirective,
+    InvalidTextValidatorDirective,
+    StandaloneControlFormComponent,
+    CustomValidatorFormEx2Component,
+    CustomValidatorFormEx1Component,
     AsyncCustomValidatorFormComponent,
+    DepartmentQuantityValidatorDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
