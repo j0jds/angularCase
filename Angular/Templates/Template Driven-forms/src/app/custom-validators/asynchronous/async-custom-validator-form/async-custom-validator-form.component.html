@@ -9,10 +9,10 @@
     appUserNameValidator
     />
 
-    <div>
-        <p>Verificando...</p>
-        <p style="color: green;">Usuário existente!</p>
-        <p style="color: red;">Usuário inexistente!</p>
+    <div *ngIf="nomeInputControl.dirty">
+        <p *ngIf="nomeInputControl.pending" style="color: orange;">Verificando...</p>
+        <p style="color: green;" *ngIf="!nomeInputControl.pending && nomeInputControl.valid && !nomeInputControl.hasError('invalidUserName')">Usuário existente!</p>
+        <p style="color: red;" *ngIf="!nomeInputControl.pending && nomeInputControl.invalid && nomeInputControl.hasError('invalidUserName')">Usuário inexistente!</p>
     </div>
 
     <p>Válido: {{ nomeInputControl.valid }}</p>
