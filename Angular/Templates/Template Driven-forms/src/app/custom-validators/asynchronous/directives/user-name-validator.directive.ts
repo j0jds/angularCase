@@ -25,7 +25,7 @@ export class UserNameValidatorDirective implements AsyncValidator {
     }
 
     return this._usersService.getUsers().pipe(
-      delay(3000),
+      delay(1000),
       map((users) => {
     
         const foundUser = users.find((user) => user.name === control.value);
