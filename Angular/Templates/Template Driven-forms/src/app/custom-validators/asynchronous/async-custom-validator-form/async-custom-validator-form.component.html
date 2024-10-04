@@ -4,6 +4,7 @@
     name="nome"
     ngModel
     #nomeInputControl="ngModel"
+    [ngModelOptions]="{ updateOn: 'blur' }"
     placeholder="Digite o Nome" 
     appUserNameValidator
     />
