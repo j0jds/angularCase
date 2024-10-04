@@ -5,8 +5,7 @@
       type="text"
       name="nome"
       matInput
-      [ngModel]="nome"
-      (ngModelChange)="onChange($event)"
+      [(ngModel)]="nome"
       #nomeControl="ngModel"
       required
     >
@@ -17,6 +16,6 @@
   <div>
    Válido: {{ nomeControl.valid }}
     <br><br>
-    <button type="button" [disabled]="meuForm.invalid">Enviar</button>
+    <button type="button" [disabled]="meuForm.invalid" (click)="onClick()">Enviar</button>
   </div>
 </form>
