@@ -1,17 +1,21 @@
 <form #meuForm="ngForm">
   <mat-form-field>
-    <mat-label>Nome</mat-label>
+    <mat-label>Nome:</mat-label>
     <input
       type="text"
       name="nome"
       matInput
-      ngModel
+      [ngModel]="nome"
+      (ngModelChange)="onChange($event)"
       #nomeControl="ngModel"
       required
     >
+    <mat-hint>O nome é necessário!</mat-hint>
+    <mat-error>O nome deve ser preenchido!</mat-error>
   </mat-form-field>
 
   <div>
+   Válido: {{ nomeControl.valid }}
     <br><br>
     <button type="button" [disabled]="meuForm.invalid">Enviar</button>
   </div>
