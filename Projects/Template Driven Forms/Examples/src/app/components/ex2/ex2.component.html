@@ -1,1 +1,31 @@
-<p>ex2 works!</p>
+<form #meuForm="ngForm">
+    <mat-form-field>
+        <mat-label>Email:</mat-label>
+        <input
+        type="text"
+        name="nome"
+        matInput
+        ngModel
+        #emailControl="ngModel"
+        appEmailValidator
+        required
+        >
+        <mat-hint>O email será usado para login.</mat-hint>
+        <mat-error>O email é <strong>obrigatório</strong>.</mat-error>
+        <mat-error>O email está <strong>fora do padrão</strong>.</mat-error>
+    </mat-form-field>
+
+    <br><br><br><br>
+
+    <div>
+        <p>Válido: {{ emailControl.valid }}</p>
+        <p>Tocado: {{ emailControl.touched }}</p>
+        <p>Sujo: {{ emailControl.dirty }}</p>
+    </div>
+
+    <br><br>
+
+    <div>
+        <button type="button" [disabled]="meuForm.invalid">Enviar</button>
+    </div>
+</form>
