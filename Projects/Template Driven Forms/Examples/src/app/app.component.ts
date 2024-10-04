@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   nome = 'Joel';
-
+  
   onChange(text: string) {
     console.log(text);
   }
   
+  onClick() {
+    console.log(this.nome);
+  }
 }
