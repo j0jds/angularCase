@@ -6,14 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 
-export class AppComponent {
-  nome = 'Joel';
-  
-  onChange(text: string) {
-    console.log(text);
-  }
-  
-  onClick() {
-    console.log(this.nome);
-  }
-}
+export class AppComponent {}
