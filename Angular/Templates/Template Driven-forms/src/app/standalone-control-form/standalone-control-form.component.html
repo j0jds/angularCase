@@ -1,0 +1,24 @@
+<form #meuForm="ngForm">
+  <input type="text" name="nome" ngModel placeholder="Digite o nome" required />
+
+  <input
+    type="text"
+    name="sozinho"
+    ngModel
+    #aloneControl="ngModel"
+    [ngModelOptions]="{ standalone: true }"
+    placeholder="Digite algo"
+    required
+  />
+</form>
+
+<h3>Dados do Standalone Control:</h3>
+<p>Válido: {{ aloneControl.valid }}</p>
+<p>Tocado: {{ aloneControl.touched }}</p>
+<p>Sujo: {{ aloneControl.dirty }}</p>
+
+<h3>Dados do Formulário:</h3>
+<p>Válido: {{ meuForm.valid }}</p>
+<p>Tocado: {{ meuForm.touched }}</p>
+<p>Sujo: {{ meuForm.dirty }}</p>
+<p>Value: {{ meuForm.value | json }}</p>
