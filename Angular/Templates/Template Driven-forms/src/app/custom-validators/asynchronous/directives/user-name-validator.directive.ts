@@ -1,6 +1,6 @@
 import { Directive, forwardRef } from '@angular/core';
 import { AbstractControl, AsyncValidator, NG_ASYNC_VALIDATORS, ValidationErrors } from '@angular/forms';
-import { Observable, map, of } from 'rxjs';
+import { Observable, delay, map, of } from 'rxjs';
 import { UsersService } from '../service/users.service';
 
 @Directive({
@@ -25,7 +25,7 @@ export class UserNameValidatorDirective implements AsyncValidator {
     }
 
     return this._usersService.getUsers().pipe(
-    
+      delay(3000),
       map((users) => {
     
         const foundUser = users.find((user) => user.name === control.value);
