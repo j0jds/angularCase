@@ -35,7 +35,8 @@ export class FormControlComponent implements OnInit {
     this.nome.disable();
   } 
 
-
-
+  resetar() {
+    this.nome.reset();
+  }
 
 }
