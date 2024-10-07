@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-control',
@@ -9,9 +9,13 @@ import { FormControl } from '@angular/forms';
 
 export class FormControlComponent implements OnInit {
 
-  nome = new FormControl('');
+  nome = new FormControl('', [Validators.required]);
 
   ngOnInit() {
+    console.log(this.nome);
+  }
+
+  mostrarStatus() {
     console.log(this.nome);
   }
 
