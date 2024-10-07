@@ -19,4 +19,8 @@ export class FormControlComponent implements OnInit {
     console.log(this.nome);
   }
 
+  alterarValor() {
+    this.nome.setValue('Alterado!!!');
+  }
+  
 }
