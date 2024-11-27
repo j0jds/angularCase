@@ -8,5 +8,5 @@ import { FormControl } from '@angular/forms';
 })
 
 export class FormControlComponent {
-  nome = new FormControl('') 
+  nome = new FormControl('nome') 
 }
