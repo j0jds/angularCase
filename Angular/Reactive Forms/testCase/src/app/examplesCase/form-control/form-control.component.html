@@ -1,2 +1,5 @@
 <label for="name">Nome: </label>
 <input type="text" id="name" [formControl]="nome" />
+
+<p>Valor: {{ nome.value }}</p>
+<button (click)="mostrarStatus()">Mostrar</button>
