@@ -1,5 +1,6 @@
 <label for="name">Nome: </label>
-<input type="text" id="name" [formControl]="nome" />
+<input type="text" id="name" [formControl]="nome" (input)="inputAlterado($event)" />
 
 <p>Valor: {{ nome.value }}</p>
-<button (click)="mostrarStatus()">Mostrar</button>
+<button (click)="mostrarStatus()">Mostrar Status</button>
+<button (click)="alterarValor()">Alterar Valor</button>
