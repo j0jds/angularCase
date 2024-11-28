@@ -27,4 +27,12 @@ export class FormControlComponent implements OnInit {
     console.log(this.nome.value);
   }  
 
+  desabilitar() {
+    this.nome.disable();
+  }
+
+  habilitar() {
+    this.nome.enable();
+  }
+
 }
