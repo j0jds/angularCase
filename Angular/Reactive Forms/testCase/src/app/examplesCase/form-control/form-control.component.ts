@@ -23,8 +23,8 @@ export class FormControlComponent implements OnInit {
     this.nome.setValue('Z');
   }
 
-  inputAlterado(event: any) {
-    console.log(event);
+  inputAlterado() {
+    console.log(this.nome.value);
   }  
 
 }
