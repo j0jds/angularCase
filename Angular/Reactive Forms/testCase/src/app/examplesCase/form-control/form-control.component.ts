@@ -9,7 +9,10 @@ import { FormControl, Validators } from '@angular/forms';
 
 export class FormControlComponent implements OnInit {
 
-  nome = new FormControl('', [Validators.required])
+  // nome = new FormControl('Inicial', [Validators.required])
+  nome = new FormControl('Inicial', { nonNullable: true, validators: [Validators.required]});
+  // Aqui o FormControl recebe um nonNullable que faz com que ele seja válido ainda que seja untouched e não seja dirty.
+  // Ao abrir um [] torna-se possível passar mais de um validador para o validators, enquanto nesse caso foi passado apenas um que é o required.
   
   ngOnInit() {
     console.log(this.nome);
@@ -35,4 +38,7 @@ export class FormControlComponent implements OnInit {
     this.nome.enable();
   }
 
+  resetar() {
+    this.nome.reset();
+  }
 }
