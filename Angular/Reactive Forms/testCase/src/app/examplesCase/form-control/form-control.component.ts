@@ -21,6 +21,7 @@ export class FormControlComponent implements OnInit {
     console.log(this.nome);
 
     this.nome.valueChanges.subscribe(result => console.log('valueChanges: ', result));
+    this.nome.statusChanges.subscribe(result => console.log('statusChanges: ', result));
   }
 
   mostrarStatus() {
