@@ -2,6 +2,7 @@
 <input type="text" id="name" [formControl]="nome" (input)="inputAlterado()" />
 
 <p>Valor: {{ nome.value }}</p>
+<p>Válido: {{ nome.valid }}</p>
 
 <button (click)="mostrarStatus()">Mostrar Status</button> <br>
 
