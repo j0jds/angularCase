@@ -75,21 +75,28 @@ export class FormControlComponent implements OnInit {
   }
 
   checarErros() {
-    // Verifica os erros e toca o som se algum erro for encontrado
     if (this.nome.hasError('required') || this.nome.hasError('minlength') || this.nome.hasError('maxlength')) {
-      this.tocarSom();
+      if (this.audio.paused) {
+        this.tocarSom();
+      }
+    } else {
+      this.pararSom();  
     }
   }
 
-  tocarSom() {
-    try {
-      this.audio.currentTime = 0;
-      this.audio.play().catch((err) => {
-        console.error('Erro ao tentar tocar o som:', err);
-      });
-    } catch (err) {
-      console.error('Erro ao tentar tocar o som:', err);
-    }
+  pararSom() {
+    this.audio.pause();
+    this.audio.currentTime = 0;  
   }
+  
+  
+
+  tocarSom() {
+    this.audio.loop = true;  
+    this.audio.play().catch(error => {
+      console.error('Erro ao tentar tocar o som: ', error);
+    });
+  }
+  
   
 }
