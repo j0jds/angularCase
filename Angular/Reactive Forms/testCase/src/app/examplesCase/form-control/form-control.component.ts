@@ -6,24 +6,26 @@ import { FormControl, Validators } from '@angular/forms';
   templateUrl: './form-control.component.html',
   styleUrl: './form-control.component.scss'
 })
-
 export class FormControlComponent implements OnInit {
 
   // nome = new FormControl('Inicial', [Validators.required])
 
   // nome = new FormControl('Inicial', { nonNullable: true, validators: [Validators.required]});
   /* Aqui o FormControl recebe um nonNullable que faz com que ele seja válido ainda que seja untouched e não seja dirty. Ao abrir um [] torna-se possível passar mais de um validador para o validators, enquanto nesse caso foi passado apenas um que é o required. */
-  
+
   nome = new FormControl('Inicial', [Validators.required, Validators.minLength(6)]);
   // Aqui o FormControl recebe um validators de minLength com pelo menos 6 caracteres. Se tiver menos que 6, então ele retorna falso.
-  
+
   // nome = new FormControl('Inicial', {nonNullable: true, validators: [Validators.required], updateOn: "blur"});
+
+  audio = new Audio('assets/sound.mp3');
   
   ngOnInit() {
     console.log(this.nome);
 
     this.nome.valueChanges.subscribe(result => console.log('valueChanges: ', result));
     this.nome.statusChanges.subscribe(result => console.log('statusChanges: ', result));
+    this.nome.statusChanges.subscribe(() => this.checarErros());
   }
 
   mostrarStatus() {
@@ -34,9 +36,10 @@ export class FormControlComponent implements OnInit {
   alterarValor() {
     this.nome.setValue('Z');
   }
-  
+
   inputAlterado() {
     console.log(this.nome.value);
+    this.checarErros();
   }  
 
   desabilitar() {
@@ -70,4 +73,23 @@ export class FormControlComponent implements OnInit {
     this.nome.addValidators(Validators.maxLength(7));
     this.nome.updateValueAndValidity();
   }
+
+  checarErros() {
+    // Verifica os erros e toca o som se algum erro for encontrado
+    if (this.nome.hasError('required') || this.nome.hasError('minlength') || this.nome.hasError('maxlength')) {
+      this.tocarSom();
+    }
+  }
+
+  tocarSom() {
+    try {
+      this.audio.currentTime = 0;
+      this.audio.play().catch((err) => {
+        console.error('Erro ao tentar tocar o som:', err);
+      });
+    } catch (err) {
+      console.error('Erro ao tentar tocar o som:', err);
+    }
+  }
+  
 }

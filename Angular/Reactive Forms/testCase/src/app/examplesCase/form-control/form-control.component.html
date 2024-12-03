@@ -1,6 +1,6 @@
 <label for="name">Nome: </label>
 <input type="text" id="name" [formControl]="nome" (input)="inputAlterado()" />
-<div style="color: red">
+<div>
     <style>
         @keyframes colorCycle {
             0% { color: red; }
@@ -11,15 +11,23 @@
             83% { color: indigo; }
             100% { color: violet; }
         }
+
+        @keyframes squashStretch {
+            0%, 100% { transform: scale(1, 1); }    
+            25% { transform: scale(1.2, 0.8); }
+            50% { transform: scale(0.8, 1.2); } 
+            75% { transform: scale(1.1, 0.9); } 
+        }
+
         .blinking {
-            animation: colorCycle 0.3s infinite;
+            animation: colorCycle 0.3s infinite, squashStretch 0.6s infinite;
+            display: inline-block;
         }
     </style>
     <span *ngIf="nome.hasError('required')" class="blinking">O campo de nome é obrigatório.</span>
     <span *ngIf="nome.hasError('minlength') && !nome.hasError('required')" class="blinking">É necessário ter no mínimo 6 caracteres.</span>
     <span *ngIf="nome.hasError('maxlength') && !nome.hasError('required')" class="blinking">É necessário ter no máximo 7 caracteres.</span>
 </div>
-
 
 <p>Valor: {{ nome.value }}</p>
 <p>Válido: {{ nome.valid }}</p>
@@ -39,3 +47,5 @@
 <button (click)="setValidators()">Set Validators</button> <br>
 
 <button (click)="addValidators()">Add Validators</button> <br>
+
+<button (click)="tocarSom()">Testar Som</button>
