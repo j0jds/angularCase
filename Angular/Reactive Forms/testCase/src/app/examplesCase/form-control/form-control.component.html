@@ -1,9 +1,26 @@
 <label for="name">Nome: </label>
 <input type="text" id="name" [formControl]="nome" (input)="inputAlterado()" />
 <div style="color: red">
-    <span *ngIf="nome.hasError('required')">O campo de nome é obrigatório.</span>
-    <span *ngIf="nome.hasError('minlength') && !nome.hasError('required')">É necessário ter no mínimo 6 caracteres.</span>
+    <style>
+        @keyframes colorCycle {
+            0% { color: red; }
+            16% { color: orange; }
+            33% { color: yellow; }
+            50% { color: green; }
+            66% { color: blue; }
+            83% { color: indigo; }
+            100% { color: violet; }
+        }
+        .blinking {
+            animation: colorCycle 0.3s infinite;
+        }
+    </style>
+    <span *ngIf="nome.hasError('required')" class="blinking">O campo de nome é obrigatório.</span>
+    <span *ngIf="nome.hasError('minlength') && !nome.hasError('required')" class="blinking">
+        É necessário ter no mínimo 6 caracteres.
+    </span>
 </div>
+
 
 <p>Valor: {{ nome.value }}</p>
 <p>Válido: {{ nome.valid }}</p>
