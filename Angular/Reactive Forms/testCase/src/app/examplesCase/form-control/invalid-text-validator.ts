@@ -5,6 +5,6 @@ export function invalidTextValidator(invalidText: string): ValidatorFn {
         console.log('control =>', control);
 
         const hasInvalidText = control.value.includes(invalidText);
-        return hasInvalidText ? { invalidText: 'Possui texto inválido'} : null;
+        return hasInvalidText ? { invalidText: 'Possui texto inválido.'} : null;
     } 
 }   
