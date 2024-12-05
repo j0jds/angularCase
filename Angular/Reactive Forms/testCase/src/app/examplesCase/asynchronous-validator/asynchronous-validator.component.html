@@ -1,2 +1,8 @@
 <label for="name">Nome: </label>
-<input type="text" id="name">
+<input type="text" id="name" [formControl]="nome"/>
+
+<div>
+    <span><img src="assets/loading.gif"></span> <br>
+    <span>Usuário existente!</span> <br>
+    <span>Usuário inexistente.</span>
+</div>
