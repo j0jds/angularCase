@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormControlComponent } from './examplesCase/form-control/form-control.component';
+import { AsynchronousValidatorComponent } from './examplesCase/asynchronous-validator/asynchronous-validator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormControlComponent
+    FormControlComponent,
+    AsynchronousValidatorComponent
   ],
   imports: [
     BrowserModule,
