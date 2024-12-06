@@ -2,7 +2,9 @@
 <input type="text" id="name" [formControl]="nome"/>
 
 <div>
-    <span><img src="assets/loading.gif"></span> <br>
-    <span>Usuário existente!</span> <br>
-    <span>Usuário inexistente.</span>
+    <p style="color: orange;">Validando...</p> 
+    <p style="color: green;">Usuário existente!</p> 
+    <p style="color: red;">Usuário inexistente.</p>
 </div>
+
+<p>Válido: {{ nome.valid }}</p>
