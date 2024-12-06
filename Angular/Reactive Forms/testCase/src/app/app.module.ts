@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormControlComponent } from './examplesCase/form-control/form-control.component';
 import { AsynchronousValidatorComponent } from './examplesCase/asynchronous-validator/asynchronous-validator.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AsynchronousValidatorComponent } from './examplesCase/asynchronous-vali
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
