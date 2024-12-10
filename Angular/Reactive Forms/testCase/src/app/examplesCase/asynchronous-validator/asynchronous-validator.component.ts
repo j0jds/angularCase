@@ -5,17 +5,15 @@ import { UserValidatorService } from './services/user-validator.service';
 @Component({
   selector: 'app-asynchronous-validator',
   templateUrl: './asynchronous-validator.component.html',
-  styleUrl: './asynchronous-validator.component.scss'
+  styleUrl: './asynchronous-validator.component.scss',
 })
-
 export class AsynchronousValidatorComponent {
   nome = new FormControl('', {
-    asyncValidators: [this._userValidatorService.validate.bind(this._userValidatorService)]
-    // Observar quais os erros em questão.
+    asyncValidators: [this._userValidatorService.validate.bind(this._userValidatorService)],
+    updateOn: 'blur',
   });
 
   constructor(
-    private readonly _userValidator: UserValidatorService
+    private readonly _userValidatorService: UserValidatorService
   ) {}
-
 }
