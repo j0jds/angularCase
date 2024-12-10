@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { UserValidatorService } from './services/user-validator.service';
 
 @Component({
   selector: 'app-asynchronous-validator',
@@ -8,5 +9,13 @@ import { FormControl } from '@angular/forms';
 })
 
 export class AsynchronousValidatorComponent {
-  nome = new FormControl('');
+  nome = new FormControl('', {
+    asyncValidators: [this._userValidatorService.validate.bind(this._userValidatorService)]
+    // Observar quais os erros em questão.
+  });
+
+  constructor(
+    private readonly _userValidator: UserValidatorService
+  ) {}
+
 }
