@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { AbstractControl, AsyncValidator, ValidationErrors } from "@angular/forms";
 import { Observable, delay, map, of } from "rxjs";
-import { UsersService } from "./";
+import { UsersService } from "./users.service";
 
 @Injectable({
     providedIn: 'root',
