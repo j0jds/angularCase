@@ -1,1 +1,17 @@
-<p>form-group works!</p>
+<!-- Diretiva formGroup para passar a instância -->
+<form [formGroup]="pessoaForm">
+    <label for="name">Nome: </label>
+    <input type="text" id="name" formControlName="nome">
+    <!-- Quando se utiliza um formControl separado, a diretiva em questão é 
+     a formControl, enquanto que no formGroup a diretiva é a formControlName. -->
+    <br>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email" formControlName="email">
+
+    <br>
+
+    <button type="submit" [disabled]="!pessoaForm.valid" (click)="mostrarValue()">Enviar</button>
+
+    <p>Formulário válido: {{ pessoaForm.valid }}</p>
+</form>
