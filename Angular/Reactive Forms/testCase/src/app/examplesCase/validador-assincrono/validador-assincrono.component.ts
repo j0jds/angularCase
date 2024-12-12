@@ -9,6 +9,7 @@ import { UserValidatorService } from './user-validator.service';
 })
 export class ValidadorAssincronoComponent {
   nome = new FormControl('', {
+    // Por alguma razão, esse _userValidatorService está com erro. No exemplo da aula, esse arquivo não possui nenhum problema com relação a inicialização.
     asyncValidators: [this._userValidatorService.validate.bind(this._userValidatorService)],
     updateOn: 'blur',
   });
