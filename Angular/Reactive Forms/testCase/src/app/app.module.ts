@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormControlComponent } from './examplesCase/form-control/form-control.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
+// import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormGroupComponent } from './examplesCase/form-group/form-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormControlComponent,
-    ValidadorAssincronoComponent
+    // ValidadorAssincronoComponent,
+    FormGroupComponent
   ],
   imports: [
     BrowserModule,
@@ -23,4 +25,5 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {}
