@@ -17,6 +17,8 @@ export class FormGroupComponent {
 
   constructor() {
     console.log(this.pessoaForm);
+
+    console.log(this.pessoaForm.get('nome'));
   }
 
   mostrarValue() {

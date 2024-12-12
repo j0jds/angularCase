@@ -4,6 +4,7 @@
     <input type="text" id="name" formControlName="nome">
     <!-- Quando se utiliza um formControl separado, a diretiva em questão é 
      a formControl, enquanto que no formGroup a diretiva é a formControlName. -->
+    <p *ngIf="pessoaForm.get('nome')?.hasError('required')">O nome é obrigatório.</p>
     <br>
 
     <label for="email">Email: </label>
