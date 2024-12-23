@@ -13,6 +13,10 @@ export class FormGroupComponent {
   pessoaForm = new FormGroup({
     nome: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required]),
+    endereco: new FormGroup({
+      rua: new FormControl('', [Validators.required]),
+      numero: new FormControl('', [Validators.required]), 
+    }),
   });
 
   constructor() {

@@ -9,10 +9,24 @@
     
         <label for="email">Email: </label>
         <input type="text" id="email" formControlName="email">
+        <p *ngIf="email.hasError('required')">O email é obrigatório.</p>
     
+        <br>
+
+        <div formGroupName="endereco">
+            <label for="street">Rua: </label>
+            <input type="text" id="street" formControlName="rua" />
+
+            <br>
+
+            <label for="number">Número: </label>
+            <input type="text" id="number" formControlName="numero">
+        </div>
+
         <br>
     
         <button type="submit" [disabled]="!pessoaForm.valid" (click)="mostrarValue()">Enviar</button>
     
         <p>Formulário válido: {{ pessoaForm.valid }}</p>
+        <p>Endereço válido: {{ pessoaForm.get('endereco')?.valid }}</p>
     </form>
