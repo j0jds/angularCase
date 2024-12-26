@@ -1,5 +1,5 @@
     <!-- Diretiva formGroup para passar a instância -->
-    <form [formGroup]="pessoaForm">
+    <form [formGroup]="pessoaForm" (ngSubmit)="onFormSubmit">
         <label for="name">Nome: </label>
         <input type="text" id="name" formControlName="nome">
         <!-- Quando se utiliza um formControl separado, a diretiva em questão é

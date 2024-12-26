@@ -8,7 +8,6 @@ import { Form, FormControl, FormGroup, Validators } from '@angular/forms';
 })
 
 export class FormGroupComponent {
-
   // Num projeto de reactive forms, o formulário SEMPRE deve ser um FormGroup. - Mestre Angular
   pessoaForm = new FormGroup({
     nome: new FormControl('', [Validators.required]),
@@ -33,6 +32,10 @@ export class FormGroupComponent {
   }
 
   mostrarValue() {
+    console.log(this.pessoaForm.value);
+  }
+  
+  onFormSubmit() {
     console.log(this.pessoaForm.value);
   }
 
