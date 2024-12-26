@@ -16,11 +16,13 @@
         <div formGroupName="endereco">
             <label for="street">Rua: </label>
             <input type="text" id="street" formControlName="rua" />
+            <p *ngIf="pessoaForm.get('endereco')?.get('rua')?.hasError('required')">A rua é obrigatória.</p>
 
             <br>
 
             <label for="number">Número: </label>
             <input type="text" id="number" formControlName="numero">
+            <p *ngIf="pessoaForm.get('endereco')?.get('numero')?.hasError('required')">O número é obrigatório.</p>
         </div>
 
         <br>
