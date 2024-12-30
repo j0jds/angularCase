@@ -28,6 +28,10 @@
         <br>
     
         <button type="submit" [disabled]="!pessoaForm.valid" (click)="mostrarValue()">Enviar</button>
+
+        <br>
+
+        <button (click)="alteracaoTotal()">Alteração Total!</button>
     
         <p>Formulário válido: {{ pessoaForm.valid }}</p>
         <p>Endereço válido: {{ pessoaForm.get('endereco')?.valid }}</p>
