@@ -39,4 +39,14 @@ export class FormGroupComponent {
     console.log(this.pessoaForm.value);
   }
 
+  alteracaoTotal() {
+    this.pessoaForm.setValue({
+      nome: 'Nome Novo',
+      email: 'Email Novo',
+      endereco: {
+        rua: 'Rua Nova',
+        numero: 'Número Novo'
+      }
+    })
+  }
 }
