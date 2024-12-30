@@ -16,13 +16,15 @@ export class FormGroupComponent {
       rua: new FormControl('', [Validators.required]),
       numero: new FormControl('', [Validators.required]), 
     }),
+  }, {
+    updateOn: 'blur',
   });
 
   constructor() {
     console.log(this.pessoaForm);
     console.log(this.pessoaForm.get('nome'));
 
-    this.pessoaForm.valueChanges.subscribe((value) => console.log('Pessoa Form', value))
+    this.pessoaForm.valueChanges.subscribe((value) => console.log('valueChanges => Pessoa Form', value))
   }
 
   get nome(): FormControl {
