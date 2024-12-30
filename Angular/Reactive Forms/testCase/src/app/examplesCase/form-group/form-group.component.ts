@@ -52,4 +52,14 @@ export class FormGroupComponent {
       }
     })
   }
+
+  alteracaoParcial() {
+    console.log('Alteração Parcial!')
+    this.pessoaForm.patchValue({
+      nome: 'Nome Novo',
+      endereco: {
+        rua: 'Rua Nova',
+      }
+    })
+  }
 }
