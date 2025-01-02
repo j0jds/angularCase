@@ -17,7 +17,7 @@ export class FormGroupComponent {
       numero: new FormControl('', [Validators.required]), 
     }),
   }, {
-    updateOn: 'blur',
+    updateOn: 'submit',
   });
 
   constructor() {
