@@ -20,11 +20,11 @@ export class FormArrayComponent {
   }
 
   adicionarMusica() {
-
+    this.musicas.push(new FormControl('', [Validators.required]));
   }
 
-  removerMusica() {
-    
+  removerMusica(musicaIndex: number) {
+    this.musicas.removeAt(musicaIndex);
   }
 
   get musicas() {
