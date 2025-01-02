@@ -20,6 +20,10 @@ export class FormArrayComponent {
   }
 
   adicionarMusica() {
+
+  }
+
+  removerMusica() {
     
   }
 
