@@ -19,4 +19,12 @@ export class FormArrayComponent {
     console.log(this.musicasForm);
   }
 
+  adicionarMusica() {
+    
+  }
+
+  get musicas() {
+    return this.musicasForm.get('musicas') as FormArray; 
+  }
+
 }
