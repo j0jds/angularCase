@@ -7,7 +7,7 @@
             <br>
             <label [for]="'banda - ' + i">Banda: </label>
             <input type="text" [id]="'banda - ' + i" formControlName="banda">
-            <button (click)="removerMusica()">- Remover Música</button>
+            <button (click)="removerMusica(i)">- Remover Música</button>
         </div>
         <p>Músicas Form Válido: {{ musicasForm.valid }}</p>
         <p>Form Array Válido: {{ musicas.valid }}</p>
