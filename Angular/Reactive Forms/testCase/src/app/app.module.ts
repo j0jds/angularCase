@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormGroupComponent } from './examplesCase/form-group/form-group.component';
 import { FormArrayComponent } from './examplesCase/form-array/form-array.component';
 import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-group/form-array-with-group.component';
+import { FormBuilderComponent } from './examplesCase/form-builder/form-builder.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-grou
     // ValidadorAssincronoComponent,
     FormGroupComponent,
     FormArrayComponent,
-    FormArrayWithGroupComponent
+    FormArrayWithGroupComponent,
+    FormBuilderComponent
   ],
   imports: [
     BrowserModule,
