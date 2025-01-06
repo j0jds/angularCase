@@ -1,4 +1,4 @@
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
 
 export class PessoaFormController {
     pessoaForm!: FormGroup;
@@ -17,5 +17,13 @@ export class PessoaFormController {
               ['', [Validators.required]],
             ])
           })
+    }
+
+    get nomeControl(): FormControl {
+      return this.pessoaForm.get('nome') as FormControl;
+    }
+  
+    get musicas(): FormArray {
+      return this.pessoaForm.get('musicas') as FormArray;
     }
 }
