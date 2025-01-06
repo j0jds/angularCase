@@ -30,5 +30,4 @@ export class FormBuilderComponent implements OnInit {
       ])
     })
   }
-
 }
