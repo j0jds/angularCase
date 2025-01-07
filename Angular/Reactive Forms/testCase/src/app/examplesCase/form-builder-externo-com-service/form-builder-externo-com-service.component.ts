@@ -9,7 +9,10 @@ import { PessoaFormControllerService } from './pessoa-form-controller.service';
 
 export class FormBuilderExternoComServiceComponent {
   constructor(
-    private readonly _pessoaFormControllerService: PessoaFormControllerService
+    public readonly _pessoaFormControllerService: PessoaFormControllerService
   ) {}
-
+  
+  onFormSubmit() {
+    console.log('AI AI AI')
+  }
 }
