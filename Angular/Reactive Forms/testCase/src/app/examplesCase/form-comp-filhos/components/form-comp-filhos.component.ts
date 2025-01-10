@@ -15,4 +15,10 @@ export class FormCompFilhosComponent {
       numero: new FormControl('', Validators.required),
     }),
   });
+
+
+  enviar() {
+    console.log(this.pessoaForm.value)
+  }
+
 }
