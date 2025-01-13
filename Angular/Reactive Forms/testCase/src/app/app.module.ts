@@ -14,6 +14,7 @@ import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-grou
 import { FormBuilderExternoComponent } from './examplesCase/form-builder-externo/form-builder-externo.component';
 import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
 import { FormBuilderExternoComServiceComponent } from './examplesCase/form-builder-externo-com-service/form-builder-externo-com-service.component';
+import { MarkAsTouchedComponent } from './examplesCase/mark-as-touched/mark-as-touched.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormBuilderExternoComServiceComponent } from './examplesCase/form-build
     FormBuilderExternoComponent,
     FormBuilderExternoComServiceComponent,
     FormCompFilhosComponent,
-    EnderecoComponent
+    EnderecoComponent,
+    MarkAsTouchedComponent
   ],
   imports: [
     BrowserModule,
