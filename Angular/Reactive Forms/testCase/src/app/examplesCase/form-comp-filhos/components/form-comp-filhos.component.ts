@@ -16,9 +16,9 @@ export class FormCompFilhosComponent {
     }),
   });
 
-
   enviar() {
     console.log(this.pessoaForm.value)
+    console.log(this.pessoaForm.valid)
   }
 
 }
