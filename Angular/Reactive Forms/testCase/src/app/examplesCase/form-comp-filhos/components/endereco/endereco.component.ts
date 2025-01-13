@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-endereco',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class EnderecoComponent {
-
+  @Input ({ required: true }) pessoaForm!: FormGroup;
 }

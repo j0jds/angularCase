@@ -2,6 +2,6 @@
     <label>Nome: </label>
     <input type="text" formControlName="nome">
     <br>
-    <app-endereco></app-endereco>
+    <app-endereco [pessoaForm]="pessoaForm"></app-endereco>
     <button (click)="enviar()" [disabled]="!pessoaForm.valid">ENVIAR!!!</button>
 </form>
