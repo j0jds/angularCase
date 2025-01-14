@@ -34,6 +34,8 @@ export class MarkAsTouchedComponent implements OnInit {
     console.log('markNomeAsTouched');
     // this.pessoaForm.get('nome')?.markAsTouched({ onlySelf: true });
     this.pessoaForm.get('nome')?.markAsTouched();
+    // Cabe ver o funcionamento exato do updateValueAndValidity também.
+    this.pessoaForm.get('nome')?.updateValueAndValidity();
     // this.pessoaForm.get('email')?.markAsTouched();
   }
 }
