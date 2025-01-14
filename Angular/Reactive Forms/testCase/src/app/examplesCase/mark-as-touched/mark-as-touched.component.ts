@@ -20,13 +20,13 @@ export class MarkAsTouchedComponent implements OnInit {
       console.log('Touched pessoaForm', this.pessoaForm.touched)
       console.log('Touched nomeControl', this.pessoaForm.get('nome')?.touched);
       console.log('Touched emailControl', this.pessoaForm.get('email')?.touched);
-    }, 1000)
+    }, 3000)
   }
 
   markNomeAsTouched() {
     console.log('markNomeAsTouched');
-    this.pessoaForm.get('nome')?.markAsTouched();
-    this.pessoaForm.get('email')?.markAsTouched();
+    this.pessoaForm.get('nome')?.markAsTouched({ onlySelf: true });
+    // this.pessoaForm.get('email')?.markAsTouched();
   }
 
 }
