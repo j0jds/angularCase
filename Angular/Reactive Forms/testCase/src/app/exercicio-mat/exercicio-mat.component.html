@@ -1,0 +1,17 @@
+
+<form [formGroup]="pessoaForm">
+    <div>
+        <input type="text" placeholder="Nome" formControlName="nome">
+        <div *ngIf="nome.invalid && (nome.touched || nome.dirty)">
+            <p *ngIf="nome.hasError('required')">O nome é obrigatório!</p>
+        </div>
+    </div>
+
+    <div>
+        <input type="text" placeholder="Email" formControlName="email">
+        <div *ngIf="email.invalid && (email.touched || email.dirty)">
+            <p *ngIf="email.hasError('required')">O email é obrigatório!</p>
+        </div>
+    </div>
+</form>
+
