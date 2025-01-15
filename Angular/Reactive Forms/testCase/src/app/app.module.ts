@@ -9,11 +9,12 @@ import { FormArrayComponent } from './examplesCase/form-array/form-array.compone
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilderComponent } from './examplesCase/form-builder/form-builder.component';
 import { FormControlComponent } from './examplesCase/form-control/form-control.component';
-import { ExercicioMatComponent } from './exercicio-mat/exercicio-mat.component';
+import { ExercicioMatComponent } from './exercisesCase/exercicio-mat/exercicio-mat.component';
 import { MarkAsTouchedComponent } from './examplesCase/mark-as-touched/mark-as-touched.component';
 import { FormCompFilhosComponent } from './examplesCase/form-comp-filhos/components/form-comp-filhos.component';
-import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-group/form-array-with-group.component';
 import { FormBuilderExternoComponent } from './examplesCase/form-builder-externo/form-builder-externo.component';
+import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-group/form-array-with-group.component';
+import { FormComChamadaHttpComponent } from './exercisesCase/form-com-chamada-http/form-com-chamada-http.component';
 import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
 import { FormBuilderExternoComServiceComponent } from './examplesCase/form-builder-externo-com-service/form-builder-externo-com-service.component';
 
@@ -31,7 +32,8 @@ import { FormBuilderExternoComServiceComponent } from './examplesCase/form-build
     FormCompFilhosComponent,
     EnderecoComponent,
     MarkAsTouchedComponent,
-    ExercicioMatComponent
+    ExercicioMatComponent,
+    FormComChamadaHttpComponent
   ],
   imports: [
     BrowserModule,
