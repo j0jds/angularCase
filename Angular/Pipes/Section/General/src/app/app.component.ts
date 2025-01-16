@@ -13,7 +13,7 @@ export enum UserStatusEnum {
 
 export class AppComponent { 
   user = {
-    nome: 'Felipe',
+    nome: 'João',
     idade: 26,
     status: 1,
   };

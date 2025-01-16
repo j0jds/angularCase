@@ -8,7 +8,7 @@ import { Observable, of } from "rxjs";
 export class UserService {
     getUser(): Observable<any> {
         return of({
-            nome: 'Felipe',
+            nome: 'Joel',
             idade: 27,
             ativo: true,
             endereco: {
