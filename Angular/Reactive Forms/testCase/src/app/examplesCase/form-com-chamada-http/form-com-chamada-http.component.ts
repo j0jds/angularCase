@@ -54,8 +54,8 @@ pessoaForm!: FormGroup;
 
     userResponse.telefones.forEach((tel: any) => {
       this.telefones.push(new FormGroup({
-        numero: new FormControl(null),
-        ddd: new FormControl(null)
+        numero: new FormControl(tel.numero),
+        ddd: new FormControl(tel.ddd)
       }));
     })
 

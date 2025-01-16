@@ -14,7 +14,7 @@ import { MarkAsTouchedComponent } from './examplesCase/mark-as-touched/mark-as-t
 import { FormCompFilhosComponent } from './examplesCase/form-comp-filhos/components/form-comp-filhos.component';
 import { FormBuilderExternoComponent } from './examplesCase/form-builder-externo/form-builder-externo.component';
 import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-group/form-array-with-group.component';
-import { FormComChamadaHttpComponent } from './exercisesCase/form-com-chamada-http/form-com-chamada-http.component';
+import { FormComChamadaHttpComponent } from './examplesCase/form-com-chamada-http/form-com-chamada-http.component';
 import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
 import { FormBuilderExternoComServiceComponent } from './examplesCase/form-builder-externo-com-service/form-builder-externo-com-service.component';
 
