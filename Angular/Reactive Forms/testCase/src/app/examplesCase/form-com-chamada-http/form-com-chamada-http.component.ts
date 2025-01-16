@@ -11,6 +11,7 @@ import { Form, FormArray, FormControl, FormGroup } from '@angular/forms';
 export class FormComChamadaHttpComponent implements OnInit {
 
 pessoaForm!: FormGroup;
+personForm!: FormGroup;
 
   constructor(
     private readonly _userService: UserService
@@ -18,7 +19,7 @@ pessoaForm!: FormGroup;
 
   ngOnInit(): void {
     this.createPessoaForm();
-
+    this.createPersonForm();
     // setTimeout sendo usado aqui para acompanhar o chamar do método após algum tempo.
     setTimeout(() => {
       this.getUserAndFullfilPessoaForm();
@@ -60,6 +61,36 @@ pessoaForm!: FormGroup;
     })
 
     console.log(this.pessoaForm);
+  }
+
+  // AULA DE COMO PREENCHER UM FORM COM CONVERSÃO DE RESPONSE HTTP //
+
+  private createPersonForm() {
+    this.personForm = new FormGroup({
+      name: new FormControl(''),
+      age: new FormControl(null),
+      active: new FormControl(false),
+      address: new FormGroup({
+        street: new FormControl(''),
+        number: new FormControl(null),
+      }),
+      phoneNumbers: new FormArray([])
+    })
+  }
+
+  private getUserAndFulfillPersonForm() {
+    this._userService.getUser.subscribe((userResponse) => {
+      this.fulfillPersonForm();
+    });
+  }
+
+  private fulfillPersonForm(userResponse: any) {
+    const person= {
+      name: userResponse.nome,
+      age: userResponse.idade,
+      
+    }
+
   }
 
 }
