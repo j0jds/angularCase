@@ -1,6 +1,6 @@
 import { UserService } from './user.service';
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { Form, FormArray, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-form-com-chamada-http',
@@ -25,6 +25,10 @@ pessoaForm!: FormGroup;
     }, 2000)
   }
 
+  get telefones(): FormArray {
+    return this.pessoaForm.get('telefones') as FormArray;
+  }
+
   createPessoaForm() {
     this.pessoaForm = new FormGroup({
       nome: new FormControl(''),
@@ -46,6 +50,7 @@ pessoaForm!: FormGroup;
 
   private fullfilPessoaForm(userResponse: any) {
     this.pessoaForm.patchValue(userResponse);
+    this.telefones.clear();
 
     console.log(this.pessoaForm);
   }
