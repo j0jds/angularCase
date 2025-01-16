@@ -52,6 +52,13 @@ pessoaForm!: FormGroup;
     this.pessoaForm.patchValue(userResponse);
     this.telefones.clear();
 
+    userResponse.telefones.forEach((tel: any) => {
+      this.telefones.push(new FormGroup({
+        numero: new FormControl(null),
+        ddd: new FormControl(null)
+      }));
+    })
+
     console.log(this.pessoaForm);
   }
 
