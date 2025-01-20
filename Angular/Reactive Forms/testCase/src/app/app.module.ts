@@ -18,6 +18,7 @@ import { FormComChamadaHttpComponent } from './examplesCase/form-com-chamada-htt
 import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
 import { FormBuilderExternoComServiceComponent } from './examplesCase/form-builder-externo-com-service/form-builder-externo-com-service.component';
 import { CrossValidatorComponent } from './examplesCase/cross-validator/cross-validator.component';
+import { AddAndRemoveControlComponent } from './add-and-remove-control/add-and-remove-control.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CrossValidatorComponent } from './examplesCase/cross-validator/cross-va
     MarkAsTouchedComponent,
     ExercicioMatComponent,
     FormComChamadaHttpComponent,
-    CrossValidatorComponent
+    CrossValidatorComponent,
+    AddAndRemoveControlComponent
   ],
   imports: [
     BrowserModule,
