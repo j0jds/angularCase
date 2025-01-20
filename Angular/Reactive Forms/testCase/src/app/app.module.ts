@@ -17,6 +17,7 @@ import { FormArrayWithGroupComponent } from './examplesCase/form-array-with-grou
 import { FormComChamadaHttpComponent } from './examplesCase/form-com-chamada-http/form-com-chamada-http.component';
 import { ValidadorAssincronoComponent } from './examplesCase/validador-assincrono/validador-assincrono.component';
 import { FormBuilderExternoComServiceComponent } from './examplesCase/form-builder-externo-com-service/form-builder-externo-com-service.component';
+import { CrossValidatorComponent } from './examplesCase/cross-validator/cross-validator.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormBuilderExternoComServiceComponent } from './examplesCase/form-build
     EnderecoComponent,
     MarkAsTouchedComponent,
     ExercicioMatComponent,
-    FormComChamadaHttpComponent
+    FormComChamadaHttpComponent,
+    CrossValidatorComponent
   ],
   imports: [
     BrowserModule,
